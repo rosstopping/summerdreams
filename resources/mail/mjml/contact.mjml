@@ -1,0 +1,29 @@
+<mjml>
+  <mj-include path="./resources/mail/inc/head.mjml" />
+
+  <mj-body background-color="#FFFFFF">
+
+    <mj-include path="./resources/mail/inc/header.mjml" />
+    
+    <mj-section padding-top="30px" padding-bottom="0px">
+      <mj-column padding-left="30px" padding-right="30px">
+        <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px">
+          Contact Form Submission
+        </mj-text>
+      </mj-column>
+    </mj-section>
+    
+    <mj-section padding-top="30px" padding-bottom="2px">
+      <mj-column width="100%" padding-left="30px" padding-right="30px">
+        <mj-text>
+        <mj-raw>
+          @foreach ($request as $name => $value)
+            {{ (string) Str::of($name)->title() }}: {{ $value }}<br></br>
+          @endforeach
+        </mj-raw>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+  </mj-body>
+</mjml>

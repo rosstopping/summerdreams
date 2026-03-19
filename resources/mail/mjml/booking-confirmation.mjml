@@ -1,0 +1,170 @@
+<mjml>
+  <mj-include path="./resources/mail/inc/head.mjml" />
+
+  <mj-body background-color="#FFFFFF">
+
+    <mj-include path="./resources/mail/inc/header.mjml" />
+
+    <mj-section padding-top="30px" padding-bottom="0px">
+      <mj-column padding-left="30px" padding-right="30px">
+        <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px" align="center">
+          Booking Confirmation
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- <mj-section padding-top="30px" padding-bottom="0px">
+      <mj-column padding-left="30px" padding-right="30px">
+        <mj-image border-radius="20px" width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
+      </mj-column>
+    </mj-section> -->
+
+    <mj-section padding-top="30px" padding-bottom="30px">
+      <mj-column width="100%" padding-left="30px" padding-right="30px">
+        <mj-text>
+          Hi {{ $booking->name }},<br></br>
+          Thank you for booking with VVIP Zante.
+        </mj-text>
+        <mj-text font-weight="bold">
+          <br />
+          Picking up wristbands
+        </mj-text>
+        <mj-text>
+          <br />
+          Our Resort Team will be in touch before you leave to arrange an appointment for you to pick up wristbands from our office @ IKON Club on the Laganas main road.<br />
+          Location - IKON Club.
+        </mj-text>
+        <mj-text>
+          <br />
+          We recommend you do this if possible as there can be over 1,000 people milling about on event days so it can be a bit chaotic.
+        </mj-text>
+        <mj-text>
+          <br />
+          Or you can show this confirmation email on the door of the event and you can get your wristbands then from our team.
+        </mj-text>
+
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="2px" padding-bottom="2px">
+      <mj-column width="100%" padding-left="30px" padding-right="30px">
+        <mj-image border-radius="20px" href="https://vvipeventszante.com" align="center" src="{{ url('images/booking-confirmation.jpeg') }}" width="600px"></mj-image>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding-top="30px" padding-bottom="30px">
+      <mj-column width="100%" padding-left="30px" padding-right="30px">
+        <mj-text font-weight="bold">
+          Event Details
+        </mj-text>
+        <mj-text>
+          <br />
+          Before you leave check out our event details page which tells you everything you need to know about times and locations.
+          <br /><br />
+          A-List Event Info - link https://a-listzante.com/event-info/
+          <br /><br />
+          Many thanks
+          <br /><br />
+          Abby D
+          <br /><br />
+          VVIP Zante
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-wrapper padding-left="20px" padding-right="20px">
+      <mj-section padding-top="0px" padding-bottom="20px">
+        <mj-column padding-left="30px" padding-right="30px">
+          <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px">
+            Booking Details
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section border-radius="20px" background-color="#fe8441" padding-top="20px" padding-bottom="0px" padding-left="20px" padding-right="20px">
+        <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+            Event
+          </mj-text>
+          <mj-text color="#ffffff" padding-top="10px">
+            @if ($booking->packages->count() > 0)
+            {{ $booking->packages->pluck('name')->implode(',') }}
+            @endif
+            @if ($booking->events->count() > 0)
+            {{ $booking->events->pluck('name')->implode(',') }}
+            @endif
+          </mj-text>
+        </mj-column>
+        <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+            Arrival Date
+          </mj-text>
+          <mj-text color="#ffffff" padding-top="10px">
+            {{ $booking->arrival_date?->format('l jS F Y') }}
+          </mj-text>
+        </mj-column>
+        <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+            Booking Reference
+          </mj-text>
+          <mj-text color="#ffffff" padding-top="10px">
+            {{ $booking->reference }}
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      @if ($booking->dates)
+      <mj-section padding-top="30px" padding-bottom="20px">
+        <mj-column padding-left="30px" padding-right="30px">
+          <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px">
+            Event Dates
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <mj-section border-radius="20px" background-color="#fe8441" padding-top="20px" padding-bottom="0px" padding-left="20px" padding-right="20px">
+        <mj-column width="50%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+            Event
+          </mj-text>
+          <mj-raw>
+            @foreach ($booking->dates as $event => $date)
+          </mj-raw>
+          <mj-text color="#ffffff" padding-top="10px">
+            {{ $event }}
+          </mj-text>
+          <mj-raw>
+            @endforeach
+          </mj-raw>
+        </mj-column>
+        <mj-column width="50%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+          <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+            Date
+          </mj-text>
+          <mj-raw>
+            @foreach ($booking->dates as $event => $date)
+          </mj-raw>
+          <mj-text color="#ffffff" padding-top="10px">
+            {{ \Carbon\Carbon::parse($date)?->format('l jS F Y') }}
+          </mj-text>
+          <mj-raw>
+            @endforeach
+          </mj-raw>
+        </mj-column>
+      </mj-section>
+      @endif
+    </mj-wrapper>
+
+
+
+    <mj-section padding-top="30px" padding-bottom="30px">
+      <mj-column width="100%" padding-left="30px" padding-right="30px">
+        <mj-text>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- <mj-include path="./resources/mail/inc/footer.mjml" /> -->
+
+  </mj-body>
+</mjml>

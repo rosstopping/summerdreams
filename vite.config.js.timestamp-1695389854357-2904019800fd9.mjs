@@ -1,0 +1,23 @@
+// vite.config.js
+import { defineConfig } from "file:///Users/rosstopping/Code/summerdreams/node_modules/vite/dist/node/index.js";
+import laravel from "file:///Users/rosstopping/Code/summerdreams/node_modules/laravel-vite-plugin/dist/index.mjs";
+import { ViteImageOptimizer } from "file:///Users/rosstopping/Code/summerdreams/node_modules/vite-plugin-image-optimizer/dist/index.mjs";
+import viteWebfontDownload from "file:///Users/rosstopping/Code/summerdreams/node_modules/vite-plugin-webfont-dl/dist/index.mjs";
+var vite_config_default = defineConfig({
+  plugins: [
+    ViteImageOptimizer(),
+    viteWebfontDownload([
+      "https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap",
+      "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    ]),
+    laravel({
+      input: ["resources/css/app.css", "resources/js/app.js"],
+      refresh: true,
+      valetTls: "summerdreams.test"
+    })
+  ]
+});
+export {
+  vite_config_default as default
+};
+//# sourceMappingURL=data:application/json;base64,ewogICJ2ZXJzaW9uIjogMywKICAic291cmNlcyI6IFsidml0ZS5jb25maWcuanMiXSwKICAic291cmNlc0NvbnRlbnQiOiBbImNvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9kaXJuYW1lID0gXCIvVXNlcnMvcm9zc3RvcHBpbmcvQ29kZS92dmlwZXZlbnRzemFudGVcIjtjb25zdCBfX3ZpdGVfaW5qZWN0ZWRfb3JpZ2luYWxfZmlsZW5hbWUgPSBcIi9Vc2Vycy9yb3NzdG9wcGluZy9Db2RlL3Z2aXBldmVudHN6YW50ZS92aXRlLmNvbmZpZy5qc1wiO2NvbnN0IF9fdml0ZV9pbmplY3RlZF9vcmlnaW5hbF9pbXBvcnRfbWV0YV91cmwgPSBcImZpbGU6Ly8vVXNlcnMvcm9zc3RvcHBpbmcvQ29kZS92dmlwZXZlbnRzemFudGUvdml0ZS5jb25maWcuanNcIjtpbXBvcnQgeyBkZWZpbmVDb25maWcgfSBmcm9tICd2aXRlJztcbmltcG9ydCBsYXJhdmVsIGZyb20gJ2xhcmF2ZWwtdml0ZS1wbHVnaW4nO1xuaW1wb3J0IHsgVml0ZUltYWdlT3B0aW1pemVyIH0gZnJvbSAndml0ZS1wbHVnaW4taW1hZ2Utb3B0aW1pemVyJztcbmltcG9ydCB2aXRlV2ViZm9udERvd25sb2FkIGZyb20gJ3ZpdGUtcGx1Z2luLXdlYmZvbnQtZGwnO1xuXG5leHBvcnQgZGVmYXVsdCBkZWZpbmVDb25maWcoe1xuICAgIHBsdWdpbnM6IFtcbiAgICAgICAgVml0ZUltYWdlT3B0aW1pemVyKCksXG4gICAgICAgIHZpdGVXZWJmb250RG93bmxvYWQoW1xuICAgICAgICAgICAgJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9RmlyYStTYW5zOml0YWwsd2dodEAwLDMwMDswLDQwMDswLDUwMDswLDYwMDswLDcwMDswLDgwMDsxLDMwMDsxLDQwMDsxLDUwMDsxLDYwMDsxLDcwMDsxLDgwMCZkaXNwbGF5PXN3YXAnLFxuICAgICAgICAgICAgJ2h0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwOzgwMCZkaXNwbGF5PXN3YXAnLFxuICAgICAgICBdKSxcbiAgICAgICAgbGFyYXZlbCh7XG4gICAgICAgICAgICBpbnB1dDogWydyZXNvdXJjZXMvY3NzL2FwcC5jc3MnLCAncmVzb3VyY2VzL2pzL2FwcC5qcyddLFxuICAgICAgICAgICAgcmVmcmVzaDogdHJ1ZSxcbiAgICAgICAgICAgIHZhbGV0VGxzOiAndnZpcGV2ZW50c3phbnRlLnRlc3QnLCBcbiAgICAgICAgfSksXG4gICAgXSxcbn0pO1xuIl0sCiAgIm1hcHBpbmdzIjogIjtBQUF1UyxTQUFTLG9CQUFvQjtBQUNwVSxPQUFPLGFBQWE7QUFDcEIsU0FBUywwQkFBMEI7QUFDbkMsT0FBTyx5QkFBeUI7QUFFaEMsSUFBTyxzQkFBUSxhQUFhO0FBQUEsRUFDeEIsU0FBUztBQUFBLElBQ0wsbUJBQW1CO0FBQUEsSUFDbkIsb0JBQW9CO0FBQUEsTUFDaEI7QUFBQSxNQUNBO0FBQUEsSUFDSixDQUFDO0FBQUEsSUFDRCxRQUFRO0FBQUEsTUFDSixPQUFPLENBQUMseUJBQXlCLHFCQUFxQjtBQUFBLE1BQ3RELFNBQVM7QUFBQSxNQUNULFVBQVU7QUFBQSxJQUNkLENBQUM7QUFBQSxFQUNMO0FBQ0osQ0FBQzsiLAogICJuYW1lcyI6IFtdCn0K

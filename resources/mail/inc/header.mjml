@@ -1,0 +1,13 @@
+<mj-section padding-top="10px" padding-bottom="0px">
+    <mj-column padding-left="0px" padding-right="0px">
+    <mj-text font-size="0px" line-height="0px" color="#ffffff">
+        Welcome to VVIP Zante
+    </mj-text>
+    </mj-column>
+</mj-section>
+
+<mj-section border-radius="20px" background-color="#fe8441" padding-top="20px" padding-bottom="0px" padding-left="20px" padding-right="20px">
+      <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
+        <mj-image href="https://vvipeventszante.com" align="center" src="{{ url('images/logo.png') }}" width="150px"></mj-image>
+    </mj-column>
+</mj-section>
