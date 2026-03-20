@@ -1,5 +1,5 @@
 {{-- newsletter --}}
-<div class="px-0 lg:px-6">
+<div class="px-0">
     <div class="bg-black relative mt-6 rounded-none lg: overflow-hidden">
         {{-- <div class="absolute top-0 z-10 h-[75%] w-full bg-linear-to-b from-black to-transparent "></div> --}}
         {{-- <div class="absolute bottom-0 z-10 h-[30%] w-full bg-linear-to-t from-white to-transparent"></div> --}}
@@ -22,6 +22,6 @@
                 </div>
             </div>
         </div>
-        <img alt="Sign up to our newsletter" class="absolute inset-0 w-full h-full object-cover opacity-50" src="{{ Vite::asset('resources/images/zante event packages 2026.jpg') }}" />
+        <img alt="Sign up to our newsletter" class="absolute inset-0 w-full h-full object-cover opacity-50" src="{{ Vite::asset('resources/images/events/vice-parties/IMG_5776.jpg') }}" />
     </div>
 </div>

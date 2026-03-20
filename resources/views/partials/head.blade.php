@@ -4,7 +4,7 @@
 <meta name="msapplication-TileImage" content="https://summerdreams.com/wp-content/uploads/2020/12/cropped-002-004-Social-Media-Profile-Pics-3-1-300x300.png" />
 <meta name="facebook-domain-verification" content="lprwnfxppcw0tkw0ovsfucijeio7ar" />
 
-@unless(request()->is('/') || request()->is('2026') || request()->is('reserve') || request()->is('make-reservation') || request()->is('book/*') || request()->is('account') || request()->is('account/*'))
+@unless(request()->is('/') || request()->is('2026') || request()->is('reserve') || request()->is('book') || request()->is('book/*') || request()->is('account') || request()->is('account/*'))
 <script src='https://widget.superchat.de/snippet.js?applicationKey=WCPxDo0Ol8v91koVB51bp4NVn6' referrerpolicy='no-referrer-when-downgrade'></script>
 @endunless
 

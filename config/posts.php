@@ -330,7 +330,7 @@ And of course all ticket holders get our discount wristband, which actually work
                 <div class="content-padding-30">
                   <span class="descblock"><p>New for Summer 2023, Tom Zanetti is flying in every week to get the party started at IKON nightclub. If you know you know and if you don’t well – make sure you find out.</p>
 <p>We have also added a Pool Party @ Karma Day Club to our event schedule this Summer, exclusively for A-List guests. Karma is the new hot spot in Laganas, nothing else comes close to this stunning new venue, you’re going to love it!</p>
-<p>Check out what’s and book your package for Summer 2023 here – <a href="https://vvipeventszante.com/make-reservation/">Event tickets and packages Summer 2023</a></p>
+<p>Check out what’s and book your package for Summer 2023 here – <a href="https://vvipeventszante.com/book/">Event tickets and packages Summer 2023</a></p>
 </span>
                 </div>
                 </div>
@@ -524,7 +524,7 @@ And of course all ticket holders get our discount wristband, which actually work
                 <div class="content-padding-30">
                   <span class="descblock"><p>We’ve also added a pool party at Karma Day club to our event schedule this Summer. Exclusively for A-List Zante guests, enjoy a pleasurable day at this brand-new venue located in central Laganas.</p>
 <p>Karma boasts a 400 square metre pool, the largest in Laganas, surrounded by daybeds and cabana’s. With a 15 foot diving platform, a fantastic restaurant and a swim up pool bar we can guarantee you are going to love it!</p>
-<p>Get available dates and book here – <a href="https://vvipeventszante.com/make-reservation/">A-List 2023</a></p>
+<p>Get available dates and book here – <a href="https://vvipeventszante.com/book/">A-List 2023</a></p>
 </span>
                 </div>
                 </div>

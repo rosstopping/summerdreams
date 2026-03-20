@@ -114,7 +114,7 @@ Route::get('event/{event:slug}', [EventController::class, 'show'])->name('event.
 Route::get('blog', BlogController::class)->name('blog');
 // Route::get('post/{post:slug}', [BlogController::class, 'show'])->name('blog.show');
 
-Route::get('galleries', GalleryController::class)->name('galleries');
+Route::get('gallery', GalleryController::class)->name('gallery');
 Route::get('gallery/{gallery:slug}', [GalleryController::class, 'show'])->name('gallery.show');
 
 Route::get('reviews', ReviewController::class)->name('reviews');

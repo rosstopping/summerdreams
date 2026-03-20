@@ -32,7 +32,7 @@
 							</p>
 
 							<div class="mt-8 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
-								<a href="/make-reservation" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-1">
+								<a href="/book" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-1">
 									Book Your Week
 								</a>
 								<a href="/packages" class="inline-flex items-center justify-center rounded-full border-2 border-white bg-white/10 px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-sm transition-transform duration-200 hover:-translate-y-1">
@@ -256,7 +256,7 @@
 						<h2 class="mt-3 font-heading text-[clamp(2rem,4vw,3.5rem)] font-black uppercase leading-[0.95] tracking-[-0.04em]">Build your Ayia Napa week around the biggest moments.</h2>
 					</div>
 					<div class="flex flex-col gap-4 sm:flex-row">
-						<a href="/make-reservation" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-1">
+						<a href="/book" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-1">
 							Reserve Now
 						</a>
 						<a href="/contact" class="inline-flex items-center justify-center rounded-full border-2 border-white bg-transparent px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-white transition-transform duration-200 hover:-translate-y-1">

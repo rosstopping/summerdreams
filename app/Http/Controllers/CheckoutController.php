@@ -19,7 +19,7 @@ class CheckoutController extends Controller
         /**
          * Setup stripe payment
          */
-        $stripe = new \Stripe\StripeClient($booking->merchant->stripe_secret);
+        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
 
         /**
          * Create the stripe user

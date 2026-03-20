@@ -187,11 +187,6 @@ class Booking extends Authenticatable
         );
     }
 
-    public function getMerchantAttribute()
-    {
-        return $this->packages->first()?->merchant ?? $this->events->first()?->merchant;
-    }
-
     public function getBalanceAttribute()
     {
         $amount = $this->amountWithFee;

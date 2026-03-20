@@ -23,7 +23,7 @@
                     {!! $event->description !!}
                 </div>
                 <div data-sal="slide-up" data-sal-duration="1000" data-sal-easing="ease-in-out" class="mt-6">
-                    <a class="inline-block bg-black font-bold text-white border-2 border-black hover:bg-brand hover:text-white hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-1 active:translate-y-1 transition-all ease-in-out px-8 py-3 uppercase" href="/make-reservation">Book {{ $event->name }}</a>
+                    <a class="inline-block bg-black font-bold text-white border-2 border-black hover:bg-brand hover:text-white hover:shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] active:shadow-none active:translate-x-1 active:translate-y-1 transition-all ease-in-out px-8 py-3 uppercase" href="/book">Book {{ $event->name }}</a>
                 </div>
             </div>
             <div>

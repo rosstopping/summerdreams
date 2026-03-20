@@ -14,6 +14,6 @@ class DiscountController extends Controller
     {
         session(['discount' => $discount->code]);
 
-        return redirect('/make-reservation');
+        return redirect('/book');
     }
 }

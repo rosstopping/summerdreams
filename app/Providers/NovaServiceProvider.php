@@ -117,8 +117,8 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
 
                 MenuSection::make('Bookings', [
                     MenuItem::resource(\App\Nova\Booking::class)->canSee(fn ($request) => $request->user()->master),
-                    MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\OnlineBookings::class)->canSee(fn ($request) => $request->user()->master),
-                    MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\SellerBookings::class)->canSee(fn ($request) => $request->user()->master),
+                    // MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\OnlineBookings::class)->canSee(fn ($request) => $request->user()->master),
+                    // MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\SellerBookings::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\Payment::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::link('Calendar', 'calendar')->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\Referral::class)->canSee(fn ($request) => $request->user()->master),

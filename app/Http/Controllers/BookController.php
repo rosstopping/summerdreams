@@ -283,6 +283,6 @@ class BookController extends Controller
 
     public function cancel()
     {
-        return redirect('make-reservation');
+        return redirect('book');
     }
 }

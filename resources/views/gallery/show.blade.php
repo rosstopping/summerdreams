@@ -45,7 +45,7 @@
                         $image->img()->attributes([
                             'alt' => $image->name,
                             'x-on:click' => 'expand('.$loop->index.')',
-                            'class' => 'cursor-pointer w-full h-auto md:h-full md:grow object-cover  md:absolute md:inset-0',
+                            'class' => 'cursor-pointer w-full h-auto md:h-full md:grow object-cover  md:absolute md:inset-0 rounded-3xl',
                         ])
                     }}
                 </div>

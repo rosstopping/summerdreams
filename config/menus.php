@@ -245,7 +245,7 @@ return [
          "name" => "Book Tikets", 
          "locale" => "en_US", 
          "class" => "Outl1ne\MenuBuilder\MenuItemTypes\MenuItemStaticURLType", 
-         "value" => "/make-reservation", 
+         "value" => "/book", 
          "target" => "_self", 
          "data" => null, 
          "parent_id" => null, 
