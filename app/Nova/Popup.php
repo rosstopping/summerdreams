@@ -2,14 +2,14 @@
 
 namespace App\Nova;
 
+use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
+use Laravel\Nova\Fields\Boolean;
 use Laravel\Nova\Fields\Number;
+use Laravel\Nova\Fields\Select;
 use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
-use Manogi\Tiptap\Tiptap;
-use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
-use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\Select;
+use Marshmallow\Tiptap\Tiptap;
 use Whitecube\NovaFlexibleContent\Flexible;
 
 class Popup extends Resource
@@ -40,7 +40,6 @@ class Popup extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function fields(NovaRequest $request)
@@ -62,7 +61,7 @@ class Popup extends Resource
                         'centered' => 'Centered',
                         'left' => 'Left',
                         'right' => 'Right',
-                    ])->displayUsingLabels()
+                    ])->displayUsingLabels(),
                 ])
                 ->addLayout('Contact Form', 'contact-form', [
                     Text::make('Name'),
@@ -83,7 +82,7 @@ class Popup extends Resource
                             Boolean::make('Required'),
                             Boolean::make('Full Width'),
                         ]),
-                    Text::make('Button Text')
+                    Text::make('Button Text'),
                 ]),
             Images::make('Image')->sortable()
                 ->enableExistingMedia()
@@ -95,14 +94,13 @@ class Popup extends Resource
                     $model->{$attribute} = $request->input($attribute) ? explode(',', str_replace(' ', '', $request->input($attribute))) : $request->input($attribute);
                 })
                 ->help('Comma seperated list of urls. Leave blank to show on every page.'),
-            Number::make('Delay', 'data->delay')->help('Number of seconds to delay popup.')
+            Number::make('Delay', 'data->delay')->help('Number of seconds to delay popup.'),
         ];
     }
 
     /**
      * Get the cards available for the request.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function cards(NovaRequest $request)
@@ -113,7 +111,6 @@ class Popup extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function filters(NovaRequest $request)
@@ -124,7 +121,6 @@ class Popup extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function lenses(NovaRequest $request)
@@ -135,7 +131,6 @@ class Popup extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function actions(NovaRequest $request)

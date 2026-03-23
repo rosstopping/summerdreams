@@ -4,13 +4,12 @@ namespace App\Nova;
 
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Panel;
-use Manogi\Tiptap\Tiptap;
+use Marshmallow\Tiptap\Tiptap;
 use Whitecube\NovaFlexibleContent\Flexible;
 
 class Post extends Resource
@@ -41,7 +40,6 @@ class Post extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function fields(NovaRequest $request)
@@ -60,7 +58,7 @@ class Post extends Resource
                 ->addLayout('Text', 'text-content', [
                     Text::make('Eyebrow'),
                     Text::make('Title'),
-                    Tiptap::make('Content')->buttons(config('app.tiptap_options'))
+                    Tiptap::make('Content')->buttons(config('app.tiptap_options')),
                 ])
                 ->addLayout('Text and Image', 'text-and-image', [
                     Text::make('Title'),
@@ -85,18 +83,18 @@ class Post extends Resource
                             Text::make('Button Text'),
                             Text::make('Button Link'),
                             Image::make('Image'),
-                        ])
+                        ]),
                 ])
                 ->addLayout('Spacer', 'spacer')
                 ->addLayout('Paralax Image', 'paralax-image', [
                     Image::make('Image'),
                 ]),
-            
+
             Tiptap::make('Content')->buttons(config('app.tiptap_options')),
 
             new Panel('SEO', [
                 Text::make('Title', 'seo->title'),
-                Textarea::make('Description', 'seo->description')
+                Textarea::make('Description', 'seo->description'),
             ]),
         ];
     }
@@ -104,7 +102,6 @@ class Post extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function cards(NovaRequest $request)
@@ -115,7 +112,6 @@ class Post extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function filters(NovaRequest $request)
@@ -126,7 +122,6 @@ class Post extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function lenses(NovaRequest $request)
@@ -137,7 +132,6 @@ class Post extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function actions(NovaRequest $request)

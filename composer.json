@@ -26,7 +26,7 @@
         "livewire/livewire": "^3.0",
         "maatwebsite/laravel-nova-excel": "^1.3",
         "mailchimp/marketing": "^3.0",
-        "manogi/nova-tiptap": "^3.2",
+        "marshmallow/nova-tiptap": "^6.0.0",
         "mostafaznv/nova-laracache": "^1.0",
         "outl1ne/nova-menu-builder": "^7.1",
         "outl1ne/nova-simple-repeatable": "^2.2",

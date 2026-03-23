@@ -3,13 +3,11 @@
 namespace App\Nova\Flexible\Layouts;
 
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
-use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Text;
-use Manogi\Tiptap\Tiptap;
+use Marshmallow\Tiptap\Tiptap;
 use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Whitecube\NovaFlexibleContent\Layouts\Layout;
 use Whitecube\NovaFlexibleContent\Concerns\HasMediaLibrary;
+use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class HeroSlider extends Layout implements HasMedia
 {
@@ -43,8 +41,7 @@ class HeroSlider extends Layout implements HasMedia
             Text::make('Video', 'video'),
             Images::make('Images', 'images')
                 ->enableExistingMedia()
-                ->withResponsiveImages()
+                ->withResponsiveImages(),
         ];
     }
-
 }

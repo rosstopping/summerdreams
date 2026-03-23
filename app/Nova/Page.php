@@ -2,25 +2,16 @@
 
 namespace App\Nova;
 
-use App\Nova\Repeater\Grid;
-use App\Nova\Repeater\TextAndImage;
-use App\Nova\Repeater\TextAndImageReversed;
-use App\Nova\Repeater\TextContent;
 use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\HasMany;
-use Laravel\Nova\Fields\ID;
-use Laravel\Nova\Fields\Repeater;
-use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\Date;
-use Laravel\Nova\Fields\FormData;
-use Laravel\Nova\Fields\Select;
-use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Fields\Image;
+use Laravel\Nova\Fields\Select;
+use Laravel\Nova\Fields\Text;
+use Laravel\Nova\Fields\Textarea;
 use Laravel\Nova\Http\Requests\NovaRequest;
 use Laravel\Nova\Panel;
-use Manogi\Tiptap\Tiptap;
+use Marshmallow\Tiptap\Tiptap;
 use Whitecube\NovaFlexibleContent\Flexible;
 
 class Page extends Resource
@@ -51,7 +42,6 @@ class Page extends Resource
     /**
      * Get the fields displayed by the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function fields(NovaRequest $request)
@@ -77,7 +67,7 @@ class Page extends Resource
                 ->addLayout('Text', 'text-content', [
                     Text::make('Eyebrow'),
                     Text::make('Title'),
-                    Tiptap::make('Content')->buttons(config('app.tiptap_options'))
+                    Tiptap::make('Content')->buttons(config('app.tiptap_options')),
                 ])
                 ->addLayout('Text and Image', 'text-and-image', [
                     Text::make('Title'),
@@ -104,7 +94,7 @@ class Page extends Resource
                             Text::make('Button Text'),
                             Text::make('Button Link'),
                             Image::make('Image'),
-                        ])
+                        ]),
                 ])
                 ->addLayout('Steps', 'steps', [
                     Flexible::make('Steps')
@@ -113,7 +103,7 @@ class Page extends Resource
                             Text::make('Name'),
                             Text::make('Title'),
                             Textarea::make('Description'),
-                        ])
+                        ]),
                 ])
                 ->addLayout('Schedule', 'schedule', [
                     Flexible::make('Schedule')
@@ -126,7 +116,7 @@ class Page extends Resource
                                 'single' => 'Single',
                                 'double' => 'Double',
                             ]),
-                        ])
+                        ]),
                 ])
                 ->addLayout('Marquee', 'marquee', [
                     Text::make('Text'),
@@ -181,20 +171,20 @@ class Page extends Resource
                             Boolean::make('Required'),
                             Boolean::make('Full Width')->default(false),
                         ]),
-                    Text::make('Button Text')
+                    Text::make('Button Text'),
                 ])
                 ->addLayout('FAQs', 'faqs'),
-                // ->addLayout('Slider', 'slider', [
-                //     Images::make('Images'),
-                // ]),
+            // ->addLayout('Slider', 'slider', [
+            //     Images::make('Images'),
+            // ]),
 
             new Panel('SEO', [
                 Text::make('Title', 'seo->title'),
-                Textarea::make('Description', 'seo->description')
+                Textarea::make('Description', 'seo->description'),
             ]),
 
             new Panel('Meta', [
-                Textarea::make('Head', 'meta->head')->help('Add tracking pixels or other code to the page head section.')
+                Textarea::make('Head', 'meta->head')->help('Add tracking pixels or other code to the page head section.'),
             ]),
         ];
     }
@@ -202,7 +192,6 @@ class Page extends Resource
     /**
      * Get the cards available for the request.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function cards(NovaRequest $request)
@@ -213,7 +202,6 @@ class Page extends Resource
     /**
      * Get the filters available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function filters(NovaRequest $request)
@@ -224,7 +212,6 @@ class Page extends Resource
     /**
      * Get the lenses available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function lenses(NovaRequest $request)
@@ -235,7 +222,6 @@ class Page extends Resource
     /**
      * Get the actions available for the resource.
      *
-     * @param  \Laravel\Nova\Http\Requests\NovaRequest  $request
      * @return array
      */
     public function actions(NovaRequest $request)

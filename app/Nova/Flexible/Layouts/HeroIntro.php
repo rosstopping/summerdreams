@@ -2,17 +2,13 @@
 
 namespace App\Nova\Flexible\Layouts;
 
-use Ebess\AdvancedNovaMediaLibrary\Fields\Images;
 use Laravel\Nova\Fields\Boolean;
-use Laravel\Nova\Fields\Textarea;
-use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Fields\Image;
-use Manogi\Tiptap\Tiptap;
+use Laravel\Nova\Fields\Text;
 use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
-use Whitecube\NovaFlexibleContent\Layouts\Layout;
 use Whitecube\NovaFlexibleContent\Concerns\HasMediaLibrary;
 use Whitecube\NovaFlexibleContent\Flexible;
+use Whitecube\NovaFlexibleContent\Layouts\Layout;
 
 class HeroIntro extends Layout implements HasMedia
 {
@@ -61,8 +57,7 @@ class HeroIntro extends Layout implements HasMedia
                     Image::make('Event Image', 'event_image'),
                     Text::make('Event URL', 'event_url')
                         ->help('URL to navigate to when the slide is clicked (optional)'),
-                ])
+                ]),
         ];
     }
-
 }
