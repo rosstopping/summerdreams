@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header image="/images/357826990_657385816431795_986628924903999417_n.jpg">
+    <x-page-header image="{{ $post->getFirstMedia('featured_image')->getFullUrl() ?? '/images/events/vice-parties/IMG_5777.jpg' }}">
         <x-slot:title>
             {{ $post->title }}
             </x-slot>
