@@ -14,7 +14,7 @@
 			[
 				'day' => 'Monday',
 				'title' => 'Sunset Yacht Party',
-				'image' => Vite::asset('resources/images/events/vice-parties/IMG_5773.jpg'),
+				'image' => '/images/events/vice-parties/IMG_5773.jpg',
 				'meta' => [
 					'Meeting Point: Pambos Napa Rocks Hotel',
 					'Meet At: 15:00',
@@ -33,7 +33,7 @@
 			[
 				'day' => 'Tuesday',
 				'title' => 'Projekt Live w/ Nathan Dawe',
-				'image' => Vite::asset('resources/images/events/vice-parties/IMG_5774.jpg'),
+				'image' => '/images/events/vice-parties/IMG_5774.jpg',
 				'meta' => [
 					'Entry: 21:30 - 01:00',
 					'Venue: Pambos Napa Rocks',
@@ -49,7 +49,7 @@
 			[
 				'day' => 'Wednesday',
 				'title' => 'Paraiso Club Night',
-				'image' => Vite::asset('resources/images/events/vice-parties/IMG_5775.jpg'),
+				'image' => '/images/events/vice-parties/IMG_5775.jpg',
 				'meta' => [
 					'Entry: 01:00 - 05:00',
 					'Venue: Shuffle Club',
@@ -59,7 +59,7 @@
 			[
 				'day' => 'Thursday',
 				'title' => 'Pambos Pool Party',
-				'image' => Vite::asset('resources/images/events/pambos/IMG_5768.jpg'),
+				'image' => '/images/events/pambos/IMG_5768.jpg',
 				'meta' => [
 					'Entry: 14:00 - 19:00',
 					'Venue: Pambos Napa Rocks',
@@ -69,7 +69,7 @@
 			[
 				'day' => 'Friday',
 				'title' => 'Vice Parties On The Roof',
-				'image' => Vite::asset('resources/images/events/vice-parties/IMG_5779.jpg'),
+				'image' => '/images/events/vice-parties/IMG_5779.jpg',
 				'meta' => [
 					'Entry: 18:00 - 23:00',
 					'Venue: Rio Gardens Hotel',
@@ -81,7 +81,7 @@
 			[
 				'day' => 'Saturday',
 				'title' => 'Carnage Bar Crawl',
-				'image' => Vite::asset('resources/images/events/vice-parties/IMG_3104.JPG'),
+				'image' => '/images/events/vice-parties/IMG_3104.JPG',
 				'meta' => [
 					'Start Time: 20:30',
 					'Meeting Point: Pambos Napa Rocks Hotel',
@@ -92,7 +92,7 @@
 			[
 				'day' => 'Sunday',
 				'title' => 'Sunset Sessions Pool Party',
-				'image' => Vite::asset('resources/images/events/pambos/IMG_5772.jpg'),
+				'image' => '/images/events/pambos/IMG_5772.jpg',
 				'meta' => [
 					'Entry: 16:00 - 22:00',
 					'Venue: Fedrania Gardens Hotel',
@@ -120,7 +120,7 @@
 						<div class="absolute -right-8 -top-8 h-28 w-28 rounded-full border-4 border-black bg-[#ffd54a]"></div>
 						<div class="absolute bottom-6 left-6 h-4 w-28 rounded-full bg-black/20"></div>
 						<div class="relative overflow-hidden rounded-[1.5rem] border-4 border-black bg-white shadow-[8px_8px_0_0_#171717]">
-							<img src="{{ Vite::asset('resources/images/events/vice-parties/IMG_5776.jpg') }}" alt="Summer Dreams party atmosphere" class="h-[18rem] w-full object-cover">
+							<img src="/images/events/vice-parties/IMG_5776.jpg" alt="Summer Dreams party atmosphere" class="h-[18rem] w-full object-cover">
 						</div>
 					</div>
 				</div>

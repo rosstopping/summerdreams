@@ -31,7 +31,7 @@
                     <div class="relative bg-[#ff6fa9] p-6 sm:p-8 lg:p-10">
                         <div class="absolute -right-8 -top-8 h-28 w-28 rounded-full border-4 border-black bg-[#ffd54a]"></div>
                         <div class="relative overflow-hidden rounded-[1.5rem] border-4 border-black bg-white shadow-[8px_8px_0_0_#171717]">
-                            <img src="{{ Vite::asset('resources/images/events/vice-parties/IMG_5778.jpg') }}" alt="Summer Dreams booking login" class="h-[18rem] w-full object-cover">
+                            <img src="/images/events/vice-parties/IMG_5778.jpg" alt="Summer Dreams booking login" class="h-[18rem] w-full object-cover">
                         </div>
                     </div>
                 </div>

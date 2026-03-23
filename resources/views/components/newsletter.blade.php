@@ -22,6 +22,6 @@
                 </div>
             </div>
         </div>
-        <img alt="Sign up to our newsletter" class="absolute inset-0 w-full h-full object-cover opacity-50" src="{{ Vite::asset('resources/images/events/vice-parties/IMG_5776.jpg') }}" />
+        <img alt="Sign up to our newsletter" class="absolute inset-0 w-full h-full object-cover opacity-50" src="/images/events/vice-parties/IMG_5776.jpg" />
     </div>
 </div>

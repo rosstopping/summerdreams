@@ -8,7 +8,7 @@
 			<div class="mx-auto max-w-7xl">
 				<div class="relative isolate overflow-hidden rounded-[2.5rem] border-4 border-black bg-[#ff6fa9] shadow-[10px_10px_0_0_#171717] sm:shadow-[14px_14px_0_0_#171717]">
 					<img
-						src="{{ Vite::asset('resources/images/events/pambos/IMG_5768.jpg') }}"
+						src="/images/events/pambos/IMG_5768.jpg"
 						alt="Ayia Napa coastline and beach clubs"
 						class="absolute inset-0 h-full w-full object-cover"
 					>
@@ -104,7 +104,7 @@
 						<div class="grid gap-0 md:grid-cols-[1.1fr_0.9fr]">
 							<div class="relative min-h-[18rem] md:min-h-[22rem]">
 								<img
-									src="{{ Vite::asset('resources/images/events/vice-parties/IMG_5774.jpg') }}"
+									src="/images/events/vice-parties/IMG_5774.jpg"
 									alt="Summer Dreams party crowd"
 									class="absolute inset-0 h-full w-full object-cover"
 								>
