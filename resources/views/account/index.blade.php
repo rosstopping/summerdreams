@@ -15,7 +15,7 @@
         </nav>
     </div> --}}
 
-    <div class="bg-zinc-100 px-6 py-6 md:py-12">
+    <div class="px-6 py-6 md:py-12 relative z-10">
         <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between">
                 <h2 class="text-lg font-semibold text-gray-900">Booking Overview</h2>

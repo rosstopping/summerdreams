@@ -21,6 +21,15 @@ class AccountMiddleware
 
         $booking = Booking::where('id', data_get(session('booking'), 'id'))->firstOrFail();
 
+        /**
+         * Check if booking is confirmed
+         */
+        if (!$booking->confirmed_at) {
+            session()->forget('booking');
+
+            return redirect('login');
+        }
+
         session()->put('booking', $booking);
         
         return $next($request);
