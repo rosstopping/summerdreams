@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header :responsiveImage="$page?->image('header')" image="/images/357826990_657385816431795_986628924903999417_n.jpg">
+    <x-page-header :responsiveImage="$page?->image('header')" image="/images/events/vice-parties/IMG_5777.jpg">
         <x-slot:title>
         {{ $page?->title }}
         </x-slot>

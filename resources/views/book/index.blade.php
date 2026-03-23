@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header image="/images/zante event packages 26.jpg">
+    <x-page-header image="/images/events/vice-parties/IMG_5777.jpg">
         <x-slot:title>
             {{ $page->title }}
         </x-slot>

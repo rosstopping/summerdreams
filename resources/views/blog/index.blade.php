@@ -1,9 +1,9 @@
 <x-layouts.app>
-    <x-page-header image="/images/zante event packages 26.jpg">
+    <x-page-header image="/images/events/vice-parties/IMG_5777.jpg">
         <x-slot:title>
-            Zante Nightlife Guides
+            Summer Guides
             </x-slot>
-            <p>Enjoy our very comprehensive Zante Nightlife guides, where we share over 10 years of experience and knowledge of how to make the most of your Zante holiday.</p>
+            <p>Enjoy our very comprehensive Summer Guides, where we share over 10 years of experience and knowledge of how to make the most of your summer holiday.</p>
     </x-page-header>
     <div class="relative py-20 sm:py-28 ">
         <!-- Decorative shapes -->
