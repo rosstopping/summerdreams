@@ -26,3 +26,8 @@ yarn-error.log
 /resources/views/mail/card-setup-link.blade.php
 /resources/views/mail/contact.blade.php
 /resources/views/mail/seller-booking-confirmation.blade.php
+/resources/views/mail/additional-payment-mail.blade.php
+/resources/views/mail/booking-balance.blade.php
+/resources/views/mail/booking-prior-arrival.blade.php
+/resources/views/mail/extra-booked.blade.php
+/resources/views/mail/final-payment-mail.blade.php
