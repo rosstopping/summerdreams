@@ -1,7 +1,7 @@
 <mjml>
   <mj-include path="./resources/mail/inc/head.mjml" />
 
-  <mj-body background-color="#FFFFFF">
+  <mj-body background-color="#FFF7EF">
 
     <mj-include path="./resources/mail/inc/header.mjml" />
     

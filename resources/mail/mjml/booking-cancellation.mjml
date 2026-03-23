@@ -1,13 +1,13 @@
 <mjml>
   <mj-include path="./resources/mail/inc/head.mjml" />
 
-  <mj-body background-color="#FFFFFF">
+  <mj-body background-color="#FFF7EF">
 
     <mj-include path="./resources/mail/inc/header.mjml" />
 
     <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
-        <mj-image border-radius="20px" width="600px" src="https://edpp.co.uk/northern-belle/1.eMails/2021/AUTOMATED/images/1.jpg"></mj-image>
+        <mj-image border-radius="20px" width="600px" src="{{ url('images/booking-confirmation.jpeg') }}"></mj-image>
       </mj-column>
     </mj-section>
 
@@ -31,28 +31,28 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    <mj-section border-radius="20px" background-color="#171717" padding-top="20px" padding-bottom="0px" padding-left="20px" padding-right="20px">
+    <mj-section border-radius="20px" background-color="#FF6FA9" border="3px solid #171717" padding-top="20px" padding-bottom="0px" padding-left="20px" padding-right="20px">
       <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
-        <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+        <mj-text color="#171717" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
           Journey
         </mj-text>
-        <mj-text color="#ffffff" padding-top="10px">
+        <mj-text color="#171717" padding-top="10px">
           journey
         </mj-text>
       </mj-column>
       <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
-        <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+        <mj-text color="#171717" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
           Departure Date
         </mj-text>
-        <mj-text color="#ffffff" padding-top="10px">
+        <mj-text color="#171717" padding-top="10px">
           departure
         </mj-text>
       </mj-column>
       <mj-column width="33.33%" padding-left="10px" padding-right="10px" padding-bottom="20px">
-        <mj-text color="#ffffff" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
+        <mj-text color="#171717" font-family="Playfair Display, Georgia, serif;" font-size="15px" line-height="17px">
           Booking Reference
         </mj-text>
-        <mj-text color="#ffffff" padding-top="10px">
+        <mj-text color="#171717" padding-top="10px">
           {{ $mail->mailable->reference }}
         </mj-text>
       </mj-column>

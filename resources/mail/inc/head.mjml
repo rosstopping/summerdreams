@@ -3,13 +3,14 @@
   <mj-attributes>
     <mj-section padding="0px"></mj-section>
     <mj-column padding="0px"></mj-column>
-    <mj-text font-weight="400" align="left" padding="0px" font-family="Karla, sans-serif;" color="#4d4d4d" font-size="12px" letter-spacing="1px" line-height="16px"></mj-text>
-    <mj-font name="Klara" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" />
+    <mj-text font-weight="400" align="left" padding="0px" font-family="Karla, Arial, sans-serif" color="#171717" font-size="14px" letter-spacing="0.2px" line-height="22px"></mj-text>
+    <mj-font name="Karla" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700;800&display=swap" />
     <mj-image alt="#" padding="0px"></mj-image>
-    <mj-button text-decoration="none" font-weight="400" border-radius="10px" inner-padding="10px 20px 10px 20px" padding="0px" font-family="Karla, sans-serif;" background-color="#111111" color="#ffffff" font-size="12px" line-height="16px"></mj-button>
-    <mj-wrapper border-radius="20px" background-color="#f1f1f1" padding-top="30px" padding-bottom="30px">
+    <mj-button text-decoration="none" font-weight="800" border-radius="999px" border="2px solid #171717" inner-padding="12px 22px 12px 22px" padding="0px" font-family="Karla, Arial, sans-serif" background-color="#FFD54A" color="#171717" font-size="12px" line-height="16px"></mj-button>
+    <mj-wrapper border-radius="24px" border="3px solid #171717" background-color="#FFF0BE" padding-top="30px" padding-bottom="30px">
   </mj-attributes>
   <mj-style>
     @media all and (max-width:600px) { .mobile-center div { text-align: center !important; } }
+    a { color: #ff4f93; font-weight: 700; }
   </mj-style>
 </mj-head>

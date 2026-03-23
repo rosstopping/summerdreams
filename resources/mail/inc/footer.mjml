@@ -1,95 +1,22 @@
-<mj-wrapper>
+<mj-wrapper border-radius="24px" border="3px solid #171717" background-color="#111111" padding-top="30px" padding-bottom="30px">
     <mj-section padding-top="0px" padding-bottom="0px">
         <mj-column padding-left="30px" padding-right="30px">
-            <mj-image width="100px" src="https://edpp.co.uk/northern-belle/1.eMails/TEMPLATES/images/stamp.png"></mj-image>
+            <mj-text align="center" color="#7FE7FF" font-size="11px" font-weight="800" letter-spacing="3px">SUMMER DREAMS</mj-text>
+            <mj-text align="center" color="#FFFFFF" font-size="26px" font-weight="800" line-height="30px">YOUR WEEK, SORTED.</mj-text>
+            <mj-text align="center" color="#FFF7EF" padding-top="12px">Boat parties, big nights, pool sessions, and the easiest way to keep your holiday plans locked in.</mj-text>
         </mj-column>
     </mj-section>
     <mj-section padding-top="20px" padding-bottom="0px">
+        <mj-column width="50%" padding-left="30px" padding-right="15px" padding-bottom="15px">
+            <mj-button href="https://vvipeventszante.com">VISIT SITE</mj-button>
+        </mj-column>
+        <mj-column width="50%" padding-left="15px" padding-right="30px" padding-bottom="15px">
+            <mj-button background-color="#FF6FA9" href="https://instagram.com/vvipeventszante">INSTAGRAM</mj-button>
+        </mj-column>
+    </mj-section>
+    <mj-section padding-top="10px" padding-bottom="0px">
         <mj-column padding-left="30px" padding-right="30px">
-            <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px"> News, Views &amp; Offers </mj-text>
-        </mj-column>
-    </mj-section>
-    <mj-section padding-top="20px" padding-bottom="0px">
-        <mj-column padding-left="30px" padding-right="30px">
-            <mj-text> Our mission is simple; to exceed our guests' expectations. We are constantly striving to improve the experience, make special memories for our passengers & operate the most luxurious train. </mj-text>
-        </mj-column>
-    </mj-section>
-    <mj-section padding-top="20px" padding-bottom="0px">
-        <mj-column width="100%" padding-left="30px" padding-right="30px">
-            <mj-button background-color="#ffffff" href="https://northernbelle.co.uk/stay-in-touch"> STAY IN TOUCH </mj-button>
+            <mj-text align="center" color="#FFF7EF" font-size="10px" line-height="16px">VVIP Events Zante | {{ now()->format('Y') }}</mj-text>
         </mj-column>
     </mj-section>
 </mj-wrapper>
-<mj-section padding-top="30px" padding-bottom="0px">
-    <mj-column padding-left="30px" padding-right="30px">
-        <mj-image href="https://northernbelle.co.uk" align="center" src="https://edpp.co.uk/northern-belle/1.eMails/TEMPLATES/images/crest.png" width="55px"></mj-image>
-    </mj-column>
-</mj-section>
-<mj-section padding-top="5px" padding-bottom="0px">
-    <mj-column padding-left="30px" padding-right="30px">
-        <mj-text font-size="9px" line-height="11px" align="center"> RESERVATIONS: <a style="color:#9b8442; text-decoration: none;" href="tel:01270 897537">01270 897537</a>
-        </mj-text>
-        <mj-text font-size="9px" line-height="11px" align="center"> MON TO FRI 9:30AM - 5:30PM </mj-text>
-        <mj-text font-size="11px" line-height="13px" align="center">
-            <a style="color:#9b8442; text-decoration: none;" href="https://northernbelle.co.uk"> www.northernbelle.co.uk </a>
-        </mj-text>
-    </mj-column>
-</mj-section>
-<mj-section padding-top="10px" padding-bottom="20px">
-    <mj-group width="300px">
-        <mj-column>
-            <mj-image align="right" href="https://www.facebook.com/northernbelletrain/" width="30px" src="https://edpp.co.uk/northern-belle/1.eMails/TEMPLATES/images/facebook.png"></mj-image>
-        </mj-column>
-        <mj-column>
-            <mj-image align="center" href="https://www.instagram.com/northernbelletrain/" width="30px" src="https://edpp.co.uk/northern-belle/1.eMails/TEMPLATES/images/instagram.png"></mj-image>
-        </mj-column>
-        <mj-column>
-            <mj-image align="left" href="https://twitter.com/northernbelletr" width="30px" src="https://edpp.co.uk/northern-belle/1.eMails/TEMPLATES/images/twitter.png"></mj-image>
-        </mj-column>
-    </mj-group>
-</mj-section>
-<mj-section padding-left="150px" padding-right="150px">
-    <mj-group>
-        <mj-column padding-top="0px" padding-bottom="10px" padding-left="5px" padding-right="5px" width="20%" border-radius="0px">
-            <mj-image src="https://edpp.co.uk/northern-belle/1.eMails/2023/august-2023/last-minute/images/aff-fm.png"></mj-image>
-        </mj-column>
-        <mj-column padding-top="0px" padding-bottom="10px" padding-left="5px" padding-right="5px" width="20%" border-radius="0px">
-            <mj-image src="https://edpp.co.uk/northern-belle/1.eMails/2023/august-2023/last-minute/images/aff-cn.png"></mj-image>
-        </mj-column>
-        <mj-column padding-top="0px" padding-bottom="10px" padding-left="5px" padding-right="5px" width="20%" border-radius="0px">
-            <mj-image src="https://edpp.co.uk/northern-belle/1.eMails/2023/august-2023/last-minute/images/aff-kc.png"></mj-image>
-        </mj-column>
-        <mj-column padding-top="0px" padding-bottom="10px" padding-left="5px" padding-right="5px" width="20%" border-radius="0px">
-            <mj-image src="https://edpp.co.uk/northern-belle/1.eMails/2023/august-2023/last-minute/images/aff-lp.png"></mj-image>
-        </mj-column>
-        <mj-column padding-top="0px" padding-bottom="10px" padding-left="5px" padding-right="5px" width="20%" border-radius="0px">
-            <mj-image src="https://edpp.co.uk/northern-belle/1.eMails/2023/august-2023/last-minute/images/aff-krug.png"></mj-image>
-        </mj-column>
-    </mj-group>
-</mj-section>
-<mj-section padding-top="10px" padding-bottom="0px">
-    <mj-group>
-        <mj-column padding="5px">
-            <mj-text font-size="9px" line-height="11px" align="right">
-                <a style="color:#9b8442; text-decoration: none;" href="https://northernbelle.co.uk/search"> JOURNEYS </a>
-            </mj-text>
-        </mj-column>
-        <mj-column padding="5px">
-            <mj-text font-size="9px" line-height="11px" align="center">
-                <a style="color:#9b8442; text-decoration: none;" href="https://northernbelle.co.uk/giftcards"> VOUCHERS </a>
-            </mj-text>
-        </mj-column>
-        <mj-column padding="5px">
-            <mj-text font-size="9px" line-height="11px" align="left">
-                <a style="color:#9b8442; text-decoration: none;" href="https://northernbelle.co.uk/contact"> CONTACT </a>
-            </mj-text>
-        </mj-column>
-    </mj-group>
-</mj-section>
-<mj-section padding-top="10px" padding-bottom="0px">
-    <mj-column padding-left="30px" padding-right="30px">
-        <mj-text font-size="9px" line-height="11px" align="center"> Northern Belle Limited, 2 Chapel Court, Hospital Street, Nantwich, CW5 5RP </mj-text>
-        <mj-text padding-top="10px" font-size="9px" line-height="11px" align="center">Copyright &copy; Northern Belle Limited {{ now()->format('Y') }}. Images are for illustration purpose only. All copyright and other intellectual property rights in all logos, designs, text, images and other materials on this website are owned by Northern Belle Limited or appear with permission of the relevant owner. 'Northern Belle' is part of the 'West Coast Railways' company. 'Northern Belle' is a registered trade mark. All rights reserved.</mj-text>
-        <mj-text padding-top="10px" font-size="9px" line-height="11px" align="center">This email was sent to xxx</mj-text>
-    </mj-column>
-</mj-section>
