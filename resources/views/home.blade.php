@@ -144,49 +144,49 @@
 					title: 'Sunset Boat Party',
 					description: 'A premium boat party experience combining big tunes, beautiful views and a sunset to remember.',
 						color: '#ffd54a',
-						image: '{{ Vite::asset("resources/images/events/vice-parties/IMG_5773.jpg") }}'
+						image: '/images/events/vice-parties/IMG_5773.jpg'
 				},
 				{
 					day: 'Tuesday',
 					title: 'Projekt Live',
 					description: 'Chart-topping DJ and producer Nathan Dawe is packing serious heat on the decks all Summer long.',
 						color: '#ff6fa9',
-						image: '{{ Vite::asset("resources/images/events/vice-parties/IMG_5774.jpg") }}'
+						image: '/images/events/vice-parties/IMG_5774.jpg'
 				},
 				{
 					day: 'Wednesday',
 					title: 'Paraiso',
 					description: 'House music and high energy with weekly special guest DJs in an underground club.',
 						color: '#7fe7ff',
-						image: '{{ Vite::asset("resources/images/events/vice-parties/IMG_5775.jpg") }}'
+						image: '/images/events/vice-parties/IMG_5775.jpg'
 				},
 				{
 					day: 'Thursday',
 					title: 'Pambo\'s Pool Party',
 					description: 'No Napa holiday is complete without a day sesh at Pambo\'s, the ultimate pool party venue.',
 						color: '#fff0be',
-						image: '{{ Vite::asset("resources/images/events/pambos/IMG_5768.jpg") }}'
+						image: '/images/events/pambos/IMG_5768.jpg'
 				},
 				{
 					day: 'Friday',
 					title: 'Vice',
 					description: 'Ayia Napa\'s exclusive rooftop party. Dress code: Black.',
 						color: '#ffffff',
-						image: '{{ Vite::asset("resources/images/events/vice-parties/IMG_5779.jpg") }}'
+						image: '/images/events/vice-parties/IMG_5779.jpg'
 				},
 				{
 					day: 'Saturday',
 					title: 'Carnage Bar Crawl',
 					description: 'The wildest night of the week with thousands in attendance, finishing up at AQUA Club.',
 						color: '#ffd54a',
-						image: '{{ Vite::asset("resources/images/events/vice-parties/IMG_3104.JPG") }}'
+						image: '/images/events/vice-parties/IMG_3104.JPG'
 				},
 				{
 					day: 'Sunday',
 					title: 'Sunday Sessions',
 					description: 'Keeping Napa classy - end the week in style with Sunset Sessions.',
 						color: '#7fe7ff',
-						image: '{{ Vite::asset("resources/images/events/pambos/IMG_5772.jpg") }}'
+						image: '/images/events/pambos/IMG_5772.jpg'
 				}
 			],
 			next() { this.activeDay = (this.activeDay + 1) % this.schedule.length },

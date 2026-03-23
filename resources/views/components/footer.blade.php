@@ -7,7 +7,7 @@
             <div class="grid gap-0 lg:grid-cols-[1.35fr_1fr_1fr_1fr]">
                 <div class="border-b-4 border-black bg-[#fff0be] p-6 sm:p-8 lg:border-b-0 lg:border-r-4">
                     <a href="/" class="inline-block">
-                        <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="{{ config('app.name') }}" class="h-16 w-auto" />
+                        <img src="/images/logo.png" alt="{{ config('app.name') }}" class="h-16 w-auto" />
                     </a>
 
                     <p class="mt-6 max-w-md text-sm font-medium leading-6 text-black/70 sm:text-base">
@@ -91,9 +91,9 @@
             </div>
 
             <div>
-                <img class="h-16 w-auto rounded-md border border-white/20 bg-white p-1" src="{{ Vite::asset('resources/images/dmcalogo.webp') }}" alt="DMCA logo" />
+                <img class="h-16 w-auto rounded-md border border-white/20 bg-white p-1" src="/images/dmcalogo.webp" alt="DMCA logo" />
                 <div class="mt-4 inline-block rounded-md bg-white p-1">
-                    <img class="h-6" src="{{ Vite::asset('resources/images/payments.webp') }}" alt="Accepted payment methods" />
+                    <img class="h-6" src="/images/payments.webp" alt="Accepted payment methods" />
                 </div>
             </div>
         </div>

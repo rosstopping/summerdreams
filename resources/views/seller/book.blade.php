@@ -1,5 +1,5 @@
 <x-layouts.blank>
-    <img src="{{ Vite::asset('resources/images/logo-dark.png') }}" alt="{{ config('app.name') }}" class="h-20 my-6 w-auto mx-auto" />
+    <img src="/images/logo-dark.png" alt="{{ config('app.name') }}" class="h-20 my-6 w-auto mx-auto" />
     <div class="space-y-12 p-6">
         <div class="border-b border-gray-900/10 pb-12">
             <form action="{{ route('seller.book.submit', [$seller, $event, $date, $payment_method, $currency]) }}" method="POST" class="max-w-3xl mx-auto">

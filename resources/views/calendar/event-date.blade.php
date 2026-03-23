@@ -3,7 +3,7 @@
         $eventImage = $event->getFirstMedia('images');
     @endphp
 
-    <x-page-header image="{{ $eventImage ? $eventImage->getUrl() : Vite::asset('resources/images/357826990_657385816431795_986628924903999417_n.jpg') }}">
+    <x-page-header image="{{ $eventImage ? $eventImage->getUrl() : '/images/357826990_657385816431795_986628924903999417_n.jpg' }}">
         <x-slot:title>
             {{ $event->name }}
         </x-slot>

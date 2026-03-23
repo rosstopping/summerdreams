@@ -21,7 +21,7 @@ const header = () => ({
                 <div class="flex items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-7">
                     <div class="flex items-center gap-3 lg:gap-5">
                         <a href="/" class="shrink-0">
-                            <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="{{ config('app.name') }}" class="h-12 w-auto sm:h-14" />
+                            <img src="/images/logo.png" alt="{{ config('app.name') }}" class="h-12 w-auto sm:h-14" />
                         </a>
                         {{-- <div class="hidden xl:flex items-center gap-2 rounded-full border-2 border-black bg-[#111111] px-4 py-2 text-[0.65rem] font-black uppercase tracking-[0.24em] text-white">
                             <span class="inline-block h-2.5 w-2.5 rounded-full bg-[#ffd54a]"></span>
@@ -124,7 +124,7 @@ const header = () => ({
                                     </button>
                                 @else
                                     <a href="{{ $item['value'] }}" class="flex items-center rounded-[1.4rem] border-4 border-black bg-white px-5 py-4 text-sm font-black uppercase tracking-[0.16em] text-black shadow-[6px_6px_0_0_#171717]">{{ $item['name'] }}</a>
-                                @endif
+                            @endif
                             @endforeach
                         </div>
 

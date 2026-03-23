@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header image="{{ Vite::asset('resources/images/zante event packages 2026.jpg') }}">
+    <x-page-header image="/images/zante event packages 2026.jpg">
         <x-slot:title>
         Thanks for your payment!
         </x-slot>

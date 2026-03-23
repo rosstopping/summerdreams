@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header image="{{ Vite::asset('resources/images/357826990_657385816431795_986628924903999417_n.jpg') }}">
+    <x-page-header image="/images/357826990_657385816431795_986628924903999417_n.jpg">
         <x-slot:title>
             Event Calendar
         </x-slot>

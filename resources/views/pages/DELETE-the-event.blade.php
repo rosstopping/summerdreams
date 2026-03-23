@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header :responsiveImage="$page?->image('header')" image="{{ Vite::asset('resources/images/357826990_657385816431795_986628924903999417_n.jpg') }}">
+    <x-page-header :responsiveImage="$page?->image('header')" image="/images/357826990_657385816431795_986628924903999417_n.jpg">
         <x-slot:title>
         {{ $page?->title }}
         </x-slot>
@@ -85,7 +85,7 @@
                         </div>
                         <div class="absolute top-0 h-full w-full">
                             <div class="absolute left-0 top-0 z-10 h-full w-full bg-black/20"></div>
-                            <img alt="" loading="lazy" width="600" height="433" decoding="async" data-nimg="1" class="h-full w-full object-cover" src="{{ Vite::asset('resources/images/white-party-dancers.jpg') }}">
+                            <img alt="" loading="lazy" width="600" height="433" decoding="async" data-nimg="1" class="h-full w-full object-cover" src="/images/white-party-dancers.jpg">
                         </div>
                     </div>
                     <div class="h-60 w-full   bg-white shadow-lg p-4 md:p-6">

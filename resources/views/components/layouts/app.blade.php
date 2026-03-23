@@ -9,7 +9,7 @@
     @include('partials.head')
 </head>
 <body class="bg-gray-100 overflow-x-hidden {{-- cursor-brand --}}">
-    <img src="{{ Vite::asset('resources/images/logo-dark.png') }}" alt="{{ config('app.name') }}" class="h-20 my-6 w-auto mx-auto" />
+    <img src="/images/logo-dark.png" alt="{{ config('app.name') }}" class="h-20 my-6 w-auto mx-auto" />
 
     {{ $slot }}
     <x-notifications></x-notifications>

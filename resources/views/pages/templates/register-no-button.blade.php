@@ -6,7 +6,7 @@
         ]) }}
                     
         <div class="absolute top-0 left-0 w-full flex justify-center items-center pt-12 z-10">
-            <img class="h-20" src="{{ Vite::asset('resources/images/logo.webp') }}" />
+            <img class="h-20" src="/images/logo.webp" />
         </div>
 
         <div class="relative z-10 px-6">

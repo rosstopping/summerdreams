@@ -1,5 +1,5 @@
 <x-layouts.app>
-    <x-page-header :responsiveImage="$page?->image('header')" image="{{ Vite::asset('resources/images/357826990_657385816431795_986628924903999417_n.webp') }}">
+    <x-page-header :responsiveImage="$page?->image('header')" image="/images/357826990_657385816431795_986628924903999417_n.webp">
         <x-slot:title>
         {{ $page?->title }}
         </x-slot>

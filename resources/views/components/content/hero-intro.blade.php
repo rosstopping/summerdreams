@@ -14,7 +14,7 @@
     @if($content->show_logo)
         <div class="flex items-center justify-center lg:justify-start relative z-10 top-6 md:top-12 w-full px-6 z-50">
             <a href="/">
-                <img src="{{ Vite::asset('resources/images/logo.png') }}" alt="{{ config('app.name') }}" class="h-16 w-auto block">
+                <img src="/images/logo.png" alt="{{ config('app.name') }}" class="h-16 w-auto block">
             </a>
         </div>
     @endif
