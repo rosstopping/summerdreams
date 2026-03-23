@@ -16,13 +16,13 @@
             @if($fieldType && $fieldName)
             <div class="@if ($fieldType === 'textarea') sm:col-span-2 @endif @if ($fieldFullWidth === true) col-span-full @endif">
                 @if ($fieldType === 'select')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <select 
                         name="{{ Str::of($fieldName)->snake() }}" 
                         id="{{ $fieldName }}" 
-                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-sm border-2 border-black placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-brand transition-colors">
+                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] rounded-xl border-3 border-black placeholder:text-gray-400 focus:ring-2 focus:ring-brand focus:border-brand transition-all">
                         <option value="">Select an option</option>
                         @foreach (explode(',', $fieldOptions) as $option)
                             <option value="{{ trim($option) }}">{{ trim($option) }}</option>
@@ -30,7 +30,7 @@
                     </select>
                 @endif
                 @if ($fieldType === 'text' || $fieldType === 'email' || $fieldType === 'number')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <input
@@ -41,58 +41,58 @@
                         id="{{ $fieldName }}"
                         @if ($fieldType === 'mobile') autocomplete="tel" @endif
                         @if ($fieldType === 'email') autocomplete="email" @endif
-                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-sm border-2 border-black placeholder:text-gray-400 focus:border-brand focus:ring-0 transition-colors">
+                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] rounded-xl border-3 border-black placeholder:text-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-400 transition-all">
                 @endif
 
                 @if ($fieldType === 'mobile')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <x-phone-number
                         name="{{ Str::of($fieldName)->snake() }}"
-                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-sm border-2 border-black placeholder:text-gray-400 focus:border-brand focus:ring-0 transition-colors"></x-phone-number>
+                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] rounded-xl border-3 border-black placeholder:text-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-400 transition-all"></x-phone-number>
                 @endif
 
                 @if ($fieldType === 'date')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <x-date-picker
                         name="{{ Str::of($fieldName)->snake() }}"
                         value="{{ old($fieldName) }}"
                         min="{{ $fieldName === 'Arrival Date' ? today()->format('m') > 9 ? today()->month(5)->day(1)->addYear() : today()->month(5)->day(1) : today() }}"
-                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-sm border-2 border-black placeholder:text-gray-400 focus:border-brand focus:ring-0 transition-colors"></x-date-picker>
+                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] rounded-xl border-3 border-black placeholder:text-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-400 transition-all"></x-date-picker>
                 @endif
 
                 @if ($fieldType === 'textarea')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <textarea 
                         name="{{ Str::of($fieldName)->snake() }}" 
                         id="{{ $fieldName }}" 
                         rows="{{ data_get($content, 'large') ? '5' : '4' }}" 
-                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base resize-y' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-sm border-2 border-black placeholder:text-gray-400 focus:border-brand focus:ring-0 transition-colors">{{ old($fieldName) }}</textarea>
+                        class="block w-full {{ data_get($content, 'large') ? ' px-4 py-3.5 text-base resize-y' : ' px-3.5 py-2 sm:text-sm sm:leading-6' }} border-0 text-gray-900 shadow-[4px_4px_0px_rgba(0,0,0,0.1)] rounded-xl border-3 border-black placeholder:text-gray-400 focus:border-pink-400 focus:ring-2 focus:ring-pink-400 transition-all">{{ old($fieldName) }}</textarea>
                 @endif
 
                 @if ($fieldType === 'file')
-                    <label for="{{ $fieldName }}" class="block text-sm font-semibold leading-6 text-gray-900 {{ data_get($content, 'large') ? 'mb-2' : '' }}">
+                    <label for="{{ $fieldName }}" class="block {{ data_get($content, 'large') ? 'text-base font-black mb-3' : 'text-sm font-bold mb-2' }} uppercase leading-6 text-gray-900">
                         {{ $fieldName }}
                     </label>
                     <input 
                         name="{{ Str::of($fieldName)->snake() }}" 
                         id="{{ $fieldName }}" 
                         type="file"  
-                        class="block w-full {{ data_get($content, 'large') ? 'text-base file:py-2.5 file:px-4 file:' : 'text-sm file:py-2 file:px-3 file:' }} text-gray-900 file:mr-4 file:border-0 file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100 file:cursor-pointer cursor-pointer" />
+                        class="block w-full {{ data_get($content, 'large') ? 'text-base file:py-2.5 file:px-4 file:' : 'text-sm file:py-2 file:px-3 file:' }} text-gray-900 file:mr-4 file:border-0 file:font-bold file:bg-pink-400 file:text-white hover:file:bg-pink-500 file:cursor-pointer file:rounded-lg file:transition-colors cursor-pointer rounded-xl border-3 border-black" />
                 @endif
 
                 @if ($fieldType === 'boolean')
-                    <label class="{{ data_get($content, 'large') ? 'text-base gap-3' : 'text-sm gap-2' }} font-medium text-gray-900 flex items-center cursor-pointer">
+                    <label class="{{ data_get($content, 'large') ? 'text-base gap-3' : 'text-sm gap-2' }} font-bold text-gray-900 flex items-center cursor-pointer">
                         <input 
                             name="{{ Str::of($fieldName)->snake() }}" 
                             id="{{ $fieldName }}" 
                             type="checkbox" 
-                            class="{{ data_get($content, 'large') ? 'w-5 h-5' : 'w-4 h-4' }} rounded border-gray-300 text-indigo-600 focus:ring-indigo-600 cursor-pointer" /> 
+                            class="{{ data_get($content, 'large') ? 'w-5 h-5' : 'w-4 h-4' }} rounded border-2 border-black text-pink-600 focus:ring-2 focus:ring-pink-400 cursor-pointer" /> 
                         <span>{{ $fieldName }}</span>
                     </label>
                 @endif
@@ -129,7 +129,7 @@
             </div> --}}
         </div>
         <div class="{{ data_get($content, 'large') ? 'mt-8' : 'mt-6' }}">
-            <button type="submit" class="block w-full {{ data_get($content, 'large') ? ' px-6 py-4 text-base' : ' px-3.5 py-2.5 text-sm' }} bg-brand text-center font-semibold text-white shadow-sm hover:bg-brand/90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 transition-colors cursor-pointer">
+            <button type="submit" class="block w-full {{ data_get($content, 'large') ? ' px-6 py-4 text-base' : ' px-3.5 py-2.5 text-sm' }} bg-brand text-center font-black text-black shadow-[6px_6px_0px_rgba(0,0,0,0.15)] hover:shadow-[8px_8px_0px_rgba(0,0,0,0.2)] rounded-2xl border-3 border-black hover:from-pink-600 hover:to-pink-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-pink-600 transition-all cursor-pointer uppercase tracking-tight">
                 {{ data_get($content, 'button_text', 'Send message') }}
             </button>
         </div>

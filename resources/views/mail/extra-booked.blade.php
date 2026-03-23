@@ -58,14 +58,15 @@
      
     <style type="text/css">
 @media all and (max-width:600px) { .mobile-center div { text-align: center !important; } }
+    a { color: #ff4f93; font-weight: 700; }
     </style>
     
   </head>
-  <body style="word-spacing:normal;background-color:#FFFFFF;">
+  <body style="word-spacing:normal;background-color:#FFF7EF;">
     
     
       <div
-         style="background-color:#FFFFFF;" lang="und" dir="auto"
+         style="background-color:#FFF7EF;" lang="und" dir="auto"
       >
         
       
@@ -106,7 +107,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:0px;font-weight:400;letter-spacing:1px;line-height:0px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:0px;font-weight:400;letter-spacing:0.2px;line-height:0px;text-align:left;color:#ffffff;"
       >Welcome to VVIP Zante</div>
     
                 </td>
@@ -131,20 +132,20 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#fe8441" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#FF6FA9" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#fe8441;background-color:#fe8441;margin:0px auto;border-radius:20px;max-width:600px;">
+      <div  style="background:#FF6FA9;background-color:#FF6FA9;margin:0px auto;border-radius:24px;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#fe8441;background-color:#fe8441;width:100%;border-radius:20px;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FF6FA9;background-color:#FF6FA9;width:100%;border-radius:24px;"
         >
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
+                 style="border:3px solid #171717;direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:186.648px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:184.6482px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -248,7 +249,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:1px;line-height:26px;text-align:center;color:#4d4d4d;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:0.2px;line-height:26px;text-align:center;color:#171717;"
       >{{ $extra->name }}</div>
     
                 </td>
@@ -318,7 +319,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#4d4d4d;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >Dear {{ $booking->name }},<br></br>
           Thank you, for your payment for <strong>{{ $extra->name }}</strong>. Our resort team will tell you everything you need to know when you check in and pick up your event wristbands. <br></br>
 
@@ -348,23 +349,23 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#f1f1f1" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:600px;" width="600" bgcolor="#FFF0BE" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#f1f1f1;background-color:#f1f1f1;margin:0px auto;border-radius:20px;max-width:600px;">
+      <div  style="background:#FFF0BE;background-color:#FFF0BE;margin:0px auto;border-radius:24px;max-width:600px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#f1f1f1;background-color:#f1f1f1;width:100%;border-radius:20px;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FFF0BE;background-color:#FFF0BE;width:100%;border-radius:24px;"
         >
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:20px 0;padding-bottom:30px;padding-left:20px;padding-right:20px;padding-top:30px;text-align:center;"
+                 style="border:3px solid #171717;direction:ltr;font-size:0px;padding:20px 0;padding-bottom:30px;padding-left:20px;padding-right:20px;padding-top:30px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="margin:0px auto;max-width:560px;">
+      <div  style="margin:0px auto;max-width:554px;">
         
         <table
            align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
@@ -374,7 +375,7 @@
               <td
                  style="direction:ltr;font-size:0px;padding:0px;padding-bottom:20px;padding-top:0px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:554px;" ><![endif]-->
             
       <div
          class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -398,7 +399,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:1px;line-height:26px;text-align:left;color:#4d4d4d;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:0.2px;line-height:26px;text-align:left;color:#171717;"
       >Your Details</div>
     
                 </td>
@@ -423,20 +424,20 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" bgcolor="#121212" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" bgcolor="#FF6FA9" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121212;background-color:#121212;margin:0px auto;border-radius:20px;max-width:560px;">
+      <div  style="background:#FF6FA9;background-color:#FF6FA9;margin:0px auto;border-radius:20px;max-width:554px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121212;background-color:#121212;width:100%;border-radius:20px;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FF6FA9;background-color:#FF6FA9;width:100%;border-radius:20px;"
         >
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
+                 style="border:3px solid #171717;direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -460,7 +461,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Name</div>
     
                 </td>
@@ -472,7 +473,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $booking->name }}</div>
     
                 </td>
@@ -488,7 +489,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -512,7 +513,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Email</div>
     
                 </td>
@@ -524,7 +525,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $booking->email }}</div>
     
                 </td>
@@ -540,7 +541,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -564,7 +565,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Mobile</div>
     
                 </td>
@@ -576,7 +577,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $booking->mobile }}</div>
     
                 </td>
@@ -601,10 +602,10 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="margin:0px auto;max-width:560px;">
+      <div  style="margin:0px auto;max-width:554px;">
         
         <table
            align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
@@ -614,7 +615,7 @@
               <td
                  style="direction:ltr;font-size:0px;padding:0px;padding-bottom:20px;padding-top:30px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:554px;" ><![endif]-->
             
       <div
          class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -638,7 +639,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:1px;line-height:26px;text-align:left;color:#4d4d4d;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:0.2px;line-height:26px;text-align:left;color:#171717;"
       >Booking Details</div>
     
                 </td>
@@ -663,20 +664,20 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" bgcolor="#121212" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" bgcolor="#FF6FA9" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121212;background-color:#121212;margin:0px auto;border-radius:20px;max-width:560px;">
+      <div  style="background:#FF6FA9;background-color:#FF6FA9;margin:0px auto;border-radius:20px;max-width:554px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121212;background-color:#121212;width:100%;border-radius:20px;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FF6FA9;background-color:#FF6FA9;width:100%;border-radius:20px;"
         >
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
+                 style="border:3px solid #171717;direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -700,7 +701,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Package</div>
     
                 </td>
@@ -712,7 +713,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >@if ($booking->packages->count() > 0)
             {{ $booking->packages->pluck('name')->implode(',') }}
           @endif
@@ -733,7 +734,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -757,7 +758,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Arrival Date</div>
     
                 </td>
@@ -769,7 +770,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $booking->arrival_date?->format('l jS F Y') }}</div>
     
                 </td>
@@ -785,7 +786,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:173.31599999999997px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:169.3164px;" ><![endif]-->
             
       <div
          class="mj-column-per-33-33 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -809,7 +810,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Group Size</div>
     
                 </td>
@@ -821,7 +822,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $booking->guests }}</div>
     
                 </td>
@@ -846,10 +847,10 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="margin:0px auto;max-width:560px;">
+      <div  style="margin:0px auto;max-width:554px;">
         
         <table
            align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="width:100%;"
@@ -859,7 +860,7 @@
               <td
                  style="direction:ltr;font-size:0px;padding:0px;padding-bottom:20px;padding-top:30px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:560px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:554px;" ><![endif]-->
             
       <div
          class="mj-column-per-100 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -883,7 +884,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:1px;line-height:26px;text-align:left;color:#4d4d4d;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:24px;font-weight:400;letter-spacing:0.2px;line-height:26px;text-align:left;color:#171717;"
       >Event Dates</div>
     
                 </td>
@@ -908,20 +909,20 @@
       </div>
     
       
-      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:560px;" width="560" bgcolor="#121212" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
+      <!--[if mso | IE]></td></tr></table></td></tr><tr><td class="" width="600px" ><table align="center" border="0" cellpadding="0" cellspacing="0" class="" role="presentation" style="width:554px;" width="554" bgcolor="#FF6FA9" ><tr><td style="line-height:0px;font-size:0px;mso-line-height-rule:exactly;"><![endif]-->
     
       
-      <div  style="background:#121212;background-color:#121212;margin:0px auto;border-radius:20px;max-width:560px;">
+      <div  style="background:#FF6FA9;background-color:#FF6FA9;margin:0px auto;border-radius:20px;max-width:554px;">
         
         <table
-           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#121212;background-color:#121212;width:100%;border-radius:20px;"
+           align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="background:#FF6FA9;background-color:#FF6FA9;width:100%;border-radius:20px;"
         >
           <tbody>
             <tr>
               <td
-                 style="direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
+                 style="border:3px solid #171717;direction:ltr;font-size:0px;padding:0px;padding-bottom:0px;padding-left:20px;padding-right:20px;padding-top:20px;text-align:center;"
               >
-                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:260px;" ><![endif]-->
+                <!--[if mso | IE]><table role="presentation" border="0" cellpadding="0" cellspacing="0"><tr><td class="" style="vertical-align:top;width:254px;" ><![endif]-->
             
       <div
          class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -945,7 +946,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Event</div>
     
                 </td>
@@ -957,7 +958,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ $event }}</div>
     
                 </td>
@@ -973,7 +974,7 @@
     
       </div>
     
-          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:260px;" ><![endif]-->
+          <!--[if mso | IE]></td><td class="" style="vertical-align:top;width:254px;" ><![endif]-->
             
       <div
          class="mj-column-per-50 mj-outlook-group-fix" style="font-size:0px;text-align:left;direction:ltr;display:inline-block;vertical-align:top;width:100%;"
@@ -997,7 +998,7 @@
                 >
                   
       <div
-         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:1px;line-height:17px;text-align:left;color:#ffffff;"
+         style="font-family:Playfair Display, Georgia, serif;;font-size:15px;font-weight:400;letter-spacing:0.2px;line-height:17px;text-align:left;color:#171717;"
       >Date</div>
     
                 </td>
@@ -1009,7 +1010,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:left;color:#ffffff;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:left;color:#171717;"
       >{{ \Carbon\Carbon::parse($date)?->format('l jS F Y') }}</div>
     
                 </td>
@@ -1080,7 +1081,7 @@
                 >
                   
       <div
-         style="font-family:Karla, sans-serif;;font-size:12px;font-weight:400;letter-spacing:1px;line-height:16px;text-align:center;color:#4d4d4d;"
+         style="font-family:Karla, Arial, sans-serif;font-size:14px;font-weight:400;letter-spacing:0.2px;line-height:22px;text-align:center;color:#171717;"
       >Kindest Regards,</br>
           VVIP Events Zante Team</div>
     

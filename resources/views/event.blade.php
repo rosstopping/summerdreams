@@ -102,10 +102,7 @@
 		];
 	@endphp
 
-	<div class="relative -mt-28 overflow-hidden bg-[#fff7ef] pt-28 text-gray-950 sm:-mt-32 sm:pt-32">
-		<div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 -z-0 h-[36rem] bg-[radial-gradient(circle_at_top_left,_rgba(255,111,176,0.25),_transparent_38%),radial-gradient(circle_at_top_right,_rgba(127,231,255,0.22),_transparent_36%),linear-gradient(180deg,_rgba(255,247,239,1)_0%,_rgba(255,247,239,0.96)_56%,_rgba(255,247,239,1)_100%)]"></div>
-		<div aria-hidden="true" class="pointer-events-none absolute -left-12 top-24 h-36 w-36 rounded-full border-4 border-black bg-[#ffd54a]"></div>
-		<div aria-hidden="true" class="pointer-events-none absolute -right-10 top-40 h-28 w-28 rotate-12 rounded-[1.75rem] border-4 border-black bg-[#7fe7ff]"></div>
+	<div class="relative -mt-28 overflow-hidden pt-28 text-gray-950 sm:-mt-32 sm:pt-32">
 
 		<section class="relative px-4 pb-10 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl overflow-hidden rounded-[2.5rem] border-4 border-black bg-white shadow-[10px_10px_0_0_#171717] sm:shadow-[14px_14px_0_0_#171717]">

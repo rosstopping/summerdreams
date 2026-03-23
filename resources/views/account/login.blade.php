@@ -1,8 +1,5 @@
 <x-layouts.app>
-    <div class="relative overflow-x-hidden bg-[#fff7ef] text-gray-950">
-        <div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 -z-0 h-[36rem] bg-[radial-gradient(circle_at_top_left,_rgba(255,111,176,0.3),_transparent_38%),radial-gradient(circle_at_top_right,_rgba(255,214,10,0.2),_transparent_30%),linear-gradient(180deg,_rgba(255,247,239,1)_0%,_rgba(255,247,239,0.96)_55%,_rgba(255,247,239,1)_100%)]"></div>
-        <div aria-hidden="true" class="pointer-events-none absolute -left-12 top-24 h-32 w-32 rounded-full border-4 border-black bg-[#ffd54a]"></div>
-        <div aria-hidden="true" class="pointer-events-none absolute -right-10 top-32 h-24 w-24 rotate-12 rounded-[1.35rem] border-4 border-black bg-[#7fe7ff]"></div>
+    <div class="relative overflow-x-hidden text-gray-950">
 
         <section class="relative px-4 pb-10 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-7xl overflow-hidden rounded-[2.25rem] border-4 border-black bg-white shadow-[10px_10px_0_0_#171717] sm:shadow-[14px_14px_0_0_#171717]">

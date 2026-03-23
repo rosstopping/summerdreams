@@ -5,33 +5,36 @@
             </x-slot>
             <p>Enjoy our very comprehensive Zante Nightlife guides, where we share over 10 years of experience and knowledge of how to make the most of your Zante holiday.</p>
     </x-page-header>
-    <div class="pt-12 pb-24">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <div class="relative py-20 sm:py-28 ">
+        <!-- Decorative shapes -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -ml-32 -mt-32"></div>
+        <div class="absolute bottom-0 right-0 w-80 h-80 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-15 -mr-32 -mb-32"></div>
+
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+            <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
                 @foreach ($posts as $post)
-                    <article class="flex flex-col items-start justify-between">
-                        <div class="relative w-full">
-                            <a href="{{ $post->slug }}">
+                    <article class="group flex flex-col items-start justify-between bg-white rounded-3xl border-4 border-black overflow-hidden shadow-[6px_6px_0px_rgba(0,0,0,0.1)] hover:shadow-[10px_10px_0px_rgba(0,0,0,0.15)] transition-all duration-300">
+                        <div class="relative w-full h-56 overflow-hidden bg-gray-100">
+                            <a href="{{ $post->slug }}" class="block w-full h-full">
                                 {{ $post->getFirstMedia('featured_image')?->img()->attributes([
                                     'alt' => $post->title,
-                                    'class' => 'aspect-16/9 w-full  bg-gray-100 object-cover sm:aspect-2/1 lg:aspect-3/2',
+                                    'class' => 'w-full h-full object-cover group-hover:scale-105 transition-transform duration-300',
                                 ]) }}
                             </a>
-                            {{-- <div class="absolute inset-0  ring-1 ring-inset ring-gray-900/10"></div> --}}
                         </div>
-                        <div class="max-w-xl flex-1">
-                            <div class="mt-8 group relative">
-                                <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                        <div class="max-w-xl flex-1 p-8 flex flex-col">
+                            <div class="group/link relative flex-1">
+                                <h3 class="text-xl font-black leading-snug text-gray-900 group-hover/link:text-brand transition-colors">
                                     <a href="{{ $post->slug }}">
                                         <span class="absolute inset-0"></span>
                                         {{ $post->title }}
                                     </a>
                                 </h3>
-                                <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">{{ $post->excerpt }}</p>
+                                <p class="mt-4 line-clamp-3 text-sm leading-6 text-gray-600">{{ $post->excerpt }}</p>
                             </div>
-                        </div>
-                        <div data-sal="slide-up" data-sal-duration="1005000" data-sal-easing="ease-in-out" class="mt-6">
-                            <a class="inline-block  bg-black font-bold text-white hover:bg-white hover:bg-brand hover:text-white transition-all ease-in-out px-8 py-3" href="{{ $post->slug }}">Read more</a>
+                            <div class="mt-6 pt-6 border-t-3 border-gray-100">
+                                <a class="inline-block bg-brand hover:bg-brand-dark font-black text-black rounded-xl border-3 border-black px-6 py-3 shadow-[4px_4px_0px_rgba(0,0,0,0.15)] hover:shadow-[6px_6px_0px_rgba(0,0,0,0.2)] transition-all uppercase text-sm tracking-tight" href="{{ $post->slug }}">Read more</a>
+                            </div>
                         </div>
                     </article>
                 @endforeach

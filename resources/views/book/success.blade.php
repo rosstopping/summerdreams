@@ -30,7 +30,7 @@
                     <a href="/" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-8 py-3 text-sm font-black uppercase tracking-[0.18em] text-black shadow-[4px_4px_0_0_#171717] transition-transform duration-200 hover:-translate-y-1">
                         Back to Home
                     </a>
-                    <a href="/packages" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-white px-8 py-3 text-sm font-black uppercase tracking-[0.18em] text-black shadow-[4px_4px_0_0_#171717] transition-transform duration-200 hover:-translate-y-1">
+                    <a href="/event" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-white px-8 py-3 text-sm font-black uppercase tracking-[0.18em] text-black shadow-[4px_4px_0_0_#171717] transition-transform duration-200 hover:-translate-y-1">
                         View Packages
                     </a>
                 </div>

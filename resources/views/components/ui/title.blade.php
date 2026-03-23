@@ -16,20 +16,20 @@
             @break
     
         @default
-            text-3xl md:max-w-5xl md:text-5xl
+            text-3xl md:max-w-5xl md:text-4xl
     @endswitch">
         <div class="relative inline-block uppercase">
-            <span class="block text-center [text-wrap:balance]  bg-clip-text leading-normal text-transparent drop-shadow-[0_1px_0_rgba(23,23,23,0.2)] md:leading-tight tracking-normal 
+            <span class="block [text-wrap:balance] leading-normal md:leading-tight tracking-normal
     
             @switch($style)
                 @case('white')
 
-                    bg-gradient-to-b from-white to-brand-light
+                    text-white
 
                     @break
             
                 @default
-                    bg-gradient-to-b from-brand to-brand-dark
+                    text-black
             @endswitch">{{ $slot }}</span>
         </div>
     </div>

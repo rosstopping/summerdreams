@@ -1,8 +1,5 @@
 <x-layouts.app>
-	<div class="relative -mt-28 overflow-hidden bg-[#fff7ef] pt-28 text-gray-950 sm:-mt-32 sm:pt-32">
-		<div aria-hidden="true" class="pointer-events-none absolute inset-x-0 top-0 -z-0 h-[42rem] bg-[radial-gradient(circle_at_top_left,_rgba(255,111,176,0.35),_transparent_38%),radial-gradient(circle_at_top_right,_rgba(255,214,10,0.28),_transparent_30%),linear-gradient(180deg,_rgba(255,247,239,1)_0%,_rgba(255,247,239,0.96)_55%,_rgba(255,247,239,1)_100%)]"></div>
-		<div aria-hidden="true" class="pointer-events-none absolute left-[-5rem] top-24 h-40 w-40 rounded-full border-4 border-black/80 bg-[#ffd54a] blur-[2px]"></div>
-		<div aria-hidden="true" class="pointer-events-none absolute right-[-4rem] top-[28rem] h-32 w-32 rounded-[2rem] border-4 border-black/80 bg-[#7fe7ff] rotate-12"></div>
+	<div class="relative -mt-28 overflow-hidden pt-28 text-gray-950 sm:-mt-32 sm:pt-32">
 
 		<section class="relative px-4 pb-10 sm:px-6 lg:px-8">
 			<div class="mx-auto max-w-7xl">
@@ -35,7 +32,7 @@
 								<a href="/book" class="inline-flex items-center justify-center rounded-full border-2 border-black bg-[#ffd54a] px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-black transition-transform duration-200 hover:-translate-y-1">
 									Book Your Week
 								</a>
-								<a href="/packages" class="inline-flex items-center justify-center rounded-full border-2 border-white bg-white/10 px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-sm transition-transform duration-200 hover:-translate-y-1">
+								<a href="/event" class="inline-flex items-center justify-center rounded-full border-2 border-white bg-white/10 px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-white backdrop-blur-sm transition-transform duration-200 hover:-translate-y-1">
 									View Packages
 								</a>
 							</div>
