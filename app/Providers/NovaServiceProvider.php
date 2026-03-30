@@ -85,35 +85,35 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                  * Links for master
                  */
                 MenuSection::make('Dashboards', [
-                    MenuItem::dashboard(\App\Nova\Dashboards\Main::class)->canSee(fn ($request) => $request->user()->master),
+                    // MenuItem::dashboard(\App\Nova\Dashboards\Main::class)->canSee(fn ($request) => $request->user()->master),
                     // MenuItem::link('Extras Overview', 'extras-overview'),
                     // MenuGroup::make('Agents', [
                     //     MenuItem::link('Agent Branches', 'resources/group-branches'),
                     // ]),
                 ])->collapsable(),
 
-                MenuSection::make('CRM', [
-                    MenuItem::link('All Leads', 'resources/contact-forms/lens/crm-all')->withBadge(''.\App\Models\ContactForm::crm()->count(), 'info'),
-                    MenuItem::link('New Leads', 'resources/contact-forms/lens/crm-new')->withBadge(''.\App\Models\ContactForm::crm()->where(fn ($query) => $query->where('crm->status', 'new')->orWhereNull('crm->status'))->count(), 'info'),
-                    MenuItem::link('No Reply Leads', 'resources/contact-forms/lens/crm-no-reply')->withBadge(''.\App\Models\ContactForm::where('crm->status', 'no-reply')->count(), 'danger'),
-                    MenuItem::link('In Conversation Leads', 'resources/contact-forms/lens/crm-in-conversation')->withBadge(''.\App\Models\ContactForm::where('crm->status', 'in-conversation')->count(), 'warning'),
-                    MenuItem::link('Converted Leads', 'resources/contact-forms/lens/crm-converted')->withBadge(''.\App\Models\ContactForm::whereHas('booking')->count(), 'success'),
-                    MenuItem::link('Cold Leads', 'resources/contact-forms/lens/crm-cold')->withBadge(''.\App\Models\ContactForm::notCrm()->count(), 'info'),
-                ])->icon('chart-bar')->collapsable(),
+                // MenuSection::make('CRM', [
+                //     MenuItem::link('All Leads', 'resources/contact-forms/lens/crm-all')->withBadge(''.\App\Models\ContactForm::crm()->count(), 'info'),
+                //     MenuItem::link('New Leads', 'resources/contact-forms/lens/crm-new')->withBadge(''.\App\Models\ContactForm::crm()->where(fn ($query) => $query->where('crm->status', 'new')->orWhereNull('crm->status'))->count(), 'info'),
+                //     MenuItem::link('No Reply Leads', 'resources/contact-forms/lens/crm-no-reply')->withBadge(''.\App\Models\ContactForm::where('crm->status', 'no-reply')->count(), 'danger'),
+                //     MenuItem::link('In Conversation Leads', 'resources/contact-forms/lens/crm-in-conversation')->withBadge(''.\App\Models\ContactForm::where('crm->status', 'in-conversation')->count(), 'warning'),
+                //     MenuItem::link('Converted Leads', 'resources/contact-forms/lens/crm-converted')->withBadge(''.\App\Models\ContactForm::whereHas('booking')->count(), 'success'),
+                //     MenuItem::link('Cold Leads', 'resources/contact-forms/lens/crm-cold')->withBadge(''.\App\Models\ContactForm::notCrm()->count(), 'info'),
+                // ])->icon('chart-bar')->collapsable(),
 
-                MenuSection::make('Enquiries', [
-                    MenuItem::link('All Enquiries', 'resources/bookings/lens/enquiries-all')->withBadge(''.\App\Models\Booking::enquiry()->count(), 'info'),
-                    MenuItem::link('New', 'resources/bookings/lens/enquiries-new')->withBadge(''.\App\Models\Booking::enquiry()->whereNull('enquiry_status')->count(), 'info'),
-                    MenuItem::link('No Reply', 'resources/bookings/lens/enquiries-no-reply')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'no-reply')->count(), 'danger'),
-                    MenuItem::link('In Conversation', 'resources/bookings/lens/enquiries-in-conversation')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'in-conversation')->count(), 'warning'),
-                    MenuItem::link('Paying', 'resources/bookings/lens/enquiries-paying')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'paying')->count(), 'success'),
-                    // MenuItem::link('Call 2', 'resources/contact-forms/lens/call-2')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 2')->where('company_id', 1)->count(), 'info'),
-                    // MenuItem::link('Call 3', 'resources/contact-forms/lens/call-3')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 3')->where('company_id', 1)->count(), 'info'),
-                    // MenuItem::link('Call 4', 'resources/contact-forms/lens/call-4')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 4')->where('company_id', 1)->count(), 'info'),
-                    // MenuItem::link('Blowout', 'resources/contact-forms/lens/blowout')->withBadge(''.\App\Models\ContactForm::where('status', 'Blowout')->where('company_id', 1)->count(), 'danger'),
-                    // MenuItem::link('Incomplete', 'resources/contact-forms/lens/incomplete')->withBadge(''.\App\Models\ContactForm::where('status', 'Incomplete')->whereNotNull('data->mobile')->where('company_id', 1)->count(), 'warning'),
-                    // MenuItem::link('Converted', 'resources/contact-forms/lens/converted')->withBadge(''.\App\Models\ContactForm::where('status', 'Converted')->where('company_id', 1)->count(), 'success'),
-                ])->icon('user')->collapsable(),
+                // MenuSection::make('Enquiries', [
+                //     MenuItem::link('All Enquiries', 'resources/bookings/lens/enquiries-all')->withBadge(''.\App\Models\Booking::enquiry()->count(), 'info'),
+                //     MenuItem::link('New', 'resources/bookings/lens/enquiries-new')->withBadge(''.\App\Models\Booking::enquiry()->whereNull('enquiry_status')->count(), 'info'),
+                //     MenuItem::link('No Reply', 'resources/bookings/lens/enquiries-no-reply')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'no-reply')->count(), 'danger'),
+                //     MenuItem::link('In Conversation', 'resources/bookings/lens/enquiries-in-conversation')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'in-conversation')->count(), 'warning'),
+                //     MenuItem::link('Paying', 'resources/bookings/lens/enquiries-paying')->withBadge(''.\App\Models\Booking::enquiry()->where('enquiry_status', 'paying')->count(), 'success'),
+                //     // MenuItem::link('Call 2', 'resources/contact-forms/lens/call-2')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 2')->where('company_id', 1)->count(), 'info'),
+                //     // MenuItem::link('Call 3', 'resources/contact-forms/lens/call-3')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 3')->where('company_id', 1)->count(), 'info'),
+                //     // MenuItem::link('Call 4', 'resources/contact-forms/lens/call-4')->withBadge(''.\App\Models\ContactForm::where('status', 'Call 4')->where('company_id', 1)->count(), 'info'),
+                //     // MenuItem::link('Blowout', 'resources/contact-forms/lens/blowout')->withBadge(''.\App\Models\ContactForm::where('status', 'Blowout')->where('company_id', 1)->count(), 'danger'),
+                //     // MenuItem::link('Incomplete', 'resources/contact-forms/lens/incomplete')->withBadge(''.\App\Models\ContactForm::where('status', 'Incomplete')->whereNotNull('data->mobile')->where('company_id', 1)->count(), 'warning'),
+                //     // MenuItem::link('Converted', 'resources/contact-forms/lens/converted')->withBadge(''.\App\Models\ContactForm::where('status', 'Converted')->where('company_id', 1)->count(), 'success'),
+                // ])->icon('user')->collapsable(),
 
                 MenuSection::make('Bookings', [
                     MenuItem::resource(\App\Nova\Booking::class)->canSee(fn ($request) => $request->user()->master),
@@ -121,21 +121,21 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     // MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\SellerBookings::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\Payment::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::link('Calendar', 'calendar')->canSee(fn ($request) => $request->user()->master),
-                    MenuItem::resource(\App\Nova\Referral::class)->canSee(fn ($request) => $request->user()->master),
-                    MenuItem::resource(\App\Nova\Seller::class)->canSee(fn ($request) => $request->user()->master),
+                    // MenuItem::resource(\App\Nova\Referral::class)->canSee(fn ($request) => $request->user()->master),
+                    // MenuItem::resource(\App\Nova\Seller::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\ContactForm::class)->canSee(fn ($request) => $request->user()->master),
                 ])->icon('users')->collapsable(),
 
-                MenuSection::make('Extras Bookings', $extras_menu_items)->icon('users')->collapsable(),
+                // MenuSection::make('Extras Bookings', $extras_menu_items)->icon('users')->collapsable(),
 
                 MenuSection::make('Content', [
                     MenuItem::resource(\App\Nova\Page::class),
                     MenuItem::resource(\App\Nova\Event::class),
                     MenuItem::resource(\App\Nova\Package::class),
-                    MenuItem::resource(\App\Nova\SeasonalPricing::class),
-                    MenuItem::resource(\App\Nova\Extra::class),
+                    // MenuItem::resource(\App\Nova\SeasonalPricing::class),
+                    // MenuItem::resource(\App\Nova\Extra::class),
                     MenuItem::resource(\App\Nova\Gallery::class),
-                    MenuItem::resource(\App\Nova\Video::class),
+                    // MenuItem::resource(\App\Nova\Video::class),
                     MenuItem::resource(\App\Nova\Review::class),
                     MenuItem::resource(\App\Nova\Faq::class),
                     MenuItem::resource(\App\Nova\Popup::class),
