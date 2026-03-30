@@ -32,9 +32,9 @@ class BookingPriorArrivalMail extends Mailable
     public function build()
     {
         return $this
-            ->from('pickup@summerdreams.co.uk')
+            ->from('info@summerdreamsholidays.com')
             ->to($this->booking->email)
-            // ->bcc(['office@summerdreams.co.uk', 'ross@digizu.co.uk'])
+            // ->bcc(['info@summerdreamsholidays.com', 'ross@digizu.co.uk'])
             ->subject('We can\'t wait to see you soon! | '.config('app.name'))
             ->view('mail.booking-prior-arrival');
     }

@@ -62,7 +62,7 @@
 							</div>
 							<div class="rounded-[1.5rem] border-2 border-black bg-[#7fe7ff] px-5 py-4 shadow-[5px_5px_0_0_#171717]">
 								<p class="text-xs font-black uppercase tracking-[0.24em] text-black/55">02</p>
-								<p class="mt-2 text-lg font-black uppercase">Trusted Cyprus Promotors</p>
+								<p class="mt-2 text-lg font-black uppercase">Trusted Cyprus Promoters</p>
 							</div>
 							<div class="rounded-[1.5rem] border-2 border-black bg-[#ffd54a] px-5 py-4 shadow-[5px_5px_0_0_#171717]">
 								<p class="text-xs font-black uppercase tracking-[0.24em] text-black/55">03</p>
@@ -88,7 +88,7 @@
 						</h2>
 						<p class="mt-6 text-lg font-black uppercase leading-8 tracking-[0.12em] text-black sm:text-xl sm:leading-9">
 							OUR PACKAGES TICK EVERY BOX FOR THE PERFECT WEEK IN NAPA. ALL THE MOST POPULAR EVENTS IN ONE SICK PACKAGE.<br><br />
-							BROUGHT TO YOU BY THE TOP PROMOTORS IN CYPRUS WE HAVE A HUGE SUMMER LINE UP CONFIRMED.
+							BROUGHT TO YOU BY THE TOP PROMOTERS IN CYPRUS WE HAVE A HUGE SUMMER LINE UP CONFIRMED.
 						</p>
 						<p class="mt-6 max-w-2xl text-base leading-7 text-black/70 sm:text-lg">
 							This is the easy way to do Ayia Napa properly: less admin, more energy, and a full week with the events everyone actually wants.
@@ -138,14 +138,14 @@
 			schedule: [
 				{
 					day: 'Monday',
-					title: 'Sunset Boat Party',
+					title: 'Nissi Beach Party',
 					description: 'A premium boat party experience combining big tunes, beautiful views and a sunset to remember.',
 						color: '#ffd54a',
 						image: '/images/events/vice-parties/IMG_5773.jpg'
 				},
 				{
 					day: 'Tuesday',
-					title: 'Projekt Live',
+					title: 'Projekt Live with Nathan Dawe',
 					description: 'Chart-topping DJ and producer Nathan Dawe is packing serious heat on the decks all Summer long.',
 						color: '#ff6fa9',
 						image: '/images/events/vice-parties/IMG_5774.jpg'
@@ -159,28 +159,28 @@
 				},
 				{
 					day: 'Thursday',
-					title: 'Pambo\'s Pool Party',
+					title: 'PAMBOS',
 					description: 'No Napa holiday is complete without a day sesh at Pambo\'s, the ultimate pool party venue.',
 						color: '#fff0be',
 						image: '/images/events/pambos/IMG_5768.jpg'
 				},
 				{
 					day: 'Friday',
-					title: 'Vice',
+					title: 'Vice Parties On The Roof',
 					description: 'Ayia Napa\'s exclusive rooftop party. Dress code: Black.',
 						color: '#ffffff',
 						image: '/images/events/vice-parties/IMG_5779.jpg'
 				},
 				{
 					day: 'Saturday',
-					title: 'Carnage Bar Crawl',
+					title: 'Sunset YACHT Party',
 					description: 'The wildest night of the week with thousands in attendance, finishing up at AQUA Club.',
 						color: '#ffd54a',
 						image: '/images/events/vice-parties/IMG_3104.JPG'
 				},
 				{
 					day: 'Sunday',
-					title: 'Sunday Sessions',
+					title: 'Sunset Sessions Pool Party',
 					description: 'Keeping Napa classy - end the week in style with Sunset Sessions.',
 						color: '#7fe7ff',
 						image: '/images/events/pambos/IMG_5772.jpg'

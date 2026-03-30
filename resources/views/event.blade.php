@@ -1,19 +1,19 @@
 <x-layouts.app>
 	@php
 		$weeklySchedule = [
-			['day' => 'Monday', 'event' => 'Sunset Yacht Party'],
-			['day' => 'Tuesday', 'event' => 'Projekt Live'],
+			['day' => 'Monday', 'event' => 'Nissi Beach Party'],
+			['day' => 'Tuesday', 'event' => 'Projekt Live with Nathan Dawe'],
 			['day' => 'Wednesday', 'event' => 'Paraiso presents Nova Mondo, Club Night'],
-			['day' => 'Thursday', 'event' => 'Pambos Pool Party'],
-			['day' => 'Friday', 'event' => 'Vice Parties'],
-			['day' => 'Saturday', 'event' => 'Carnage Bar Crawl & Afterparty'],
-			['day' => 'Sunday', 'event' => 'Sunset Sessions'],
+			['day' => 'Thursday', 'event' => 'PAMBOS'],
+			['day' => 'Friday', 'event' => 'Vice Parties On The Roof'],
+			['day' => 'Saturday', 'event' => 'Sunset YACHT Party'],
+			['day' => 'Sunday', 'event' => 'Sunset Sessions Pool Party'],
 		];
 
 		$eventDetails = [
 			[
 				'day' => 'Monday',
-				'title' => 'Sunset Yacht Party',
+				'title' => 'Nissi Beach Party',
 				'image' => '/images/events/vice-parties/IMG_5773.jpg',
 				'meta' => [
 					'Meeting Point: Pambos Napa Rocks Hotel',
@@ -32,7 +32,7 @@
 			],
 			[
 				'day' => 'Tuesday',
-				'title' => 'Projekt Live w/ Nathan Dawe',
+				'title' => 'Projekt Live with Nathan Dawe',
 				'image' => '/images/events/vice-parties/IMG_5774.jpg',
 				'meta' => [
 					'Entry: 21:30 - 01:00',
@@ -58,7 +58,7 @@
 			],
 			[
 				'day' => 'Thursday',
-				'title' => 'Pambos Pool Party',
+				'title' => 'PAMBOS',
 				'image' => '/images/events/pambos/IMG_5768.jpg',
 				'meta' => [
 					'Entry: 14:00 - 19:00',
@@ -80,7 +80,7 @@
 			],
 			[
 				'day' => 'Saturday',
-				'title' => 'Carnage Bar Crawl',
+				'title' => 'Sunset YACHT Party',
 				'image' => '/images/events/vice-parties/IMG_3104.JPG',
 				'meta' => [
 					'Start Time: 20:30',
@@ -203,10 +203,12 @@
 					<p class="text-xs font-black uppercase tracking-[0.24em] text-black/60">Package Tiers</p>
 					<h3 class="mt-3 font-heading text-[clamp(1.9rem,3.7vw,3rem)] font-black uppercase leading-[0.92] tracking-[-0.03em]">Pick Your Level</h3>
 					<div class="mt-6 space-y-4">
-						<div class="rounded-[1.25rem] border-4 border-black bg-white px-5 py-5">
-							<p class="text-xs font-black uppercase tracking-[0.2em] text-black/60">Fully Loaded Package</p>
+						<div class="relative overflow-hidden rounded-[1.25rem] border-4 border-black bg-[#ff6fa9] px-5 py-5 text-black shadow-[8px_8px_0_0_#171717]">
+							<div class="absolute -right-8 -top-8 h-16 w-16 rounded-full border-4 border-black bg-[#ffd54a]"></div>
+							<p class="relative inline-flex rounded-full border-2 border-black bg-black px-3 py-1 text-[0.62rem] font-black uppercase tracking-[0.22em] text-white">Most Popular</p>
+							<p class="mt-3 text-xs font-black uppercase tracking-[0.2em] text-black/70">Fully Loaded Package</p>
 							<p class="mt-2 text-lg font-black uppercase">Includes every event and Napa perks</p>
-							<p class="mt-3 text-3xl font-black">&pound;150</p>
+							<p class="mt-3 text-4xl font-black">&pound;150</p>
 						</div>
 						<div class="rounded-[1.25rem] border-4 border-black bg-white px-5 py-5">
 							<p class="text-xs font-black uppercase tracking-[0.2em] text-black/60">Napa Essentials</p>

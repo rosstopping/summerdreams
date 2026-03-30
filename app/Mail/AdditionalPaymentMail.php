@@ -35,7 +35,7 @@ class AdditionalPaymentMail extends Mailable
     {
         return $this
             ->to($this->booking->email)
-            ->bcc('office@summerdreams.co.uk')
+            ->bcc('info@summerdreamsholidays.com')
             ->subject('Thank you for payment')
             ->view('mail.additional-payment-mail');
     }
