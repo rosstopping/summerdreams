@@ -80,22 +80,3 @@
         </div>
     </div>
 </footer>
-
-<section class="bg-[#111111] text-white">
-    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <div class="grid gap-8 rounded-[1.75rem] border-4 border-black bg-black p-6 shadow-[8px_8px_0_0_#171717] md:grid-cols-[minmax(0,1fr)_16rem] md:items-start md:p-8">
-            <div class="space-y-4 text-sm leading-7 text-white/75">
-                <p>This website and content including all photo's, logos and videos are the intellectual property and copyright of VVIP Events Zante Ltd. All rights reserved. Any redistribution or reproduction of part or all of the contents in any form is prohibited. VVIP Events Zante and VVIP Zante are registered trademarks No 3129880 and 3129881.</p>
-                <p>All content has been registered under the Digital Millennium Copyright Act (DMCA) who will instigate immediate and swift legal proceedings with any web host who attempts to host any of the content on this website.</p>
-                <p>Website Design by <a href="https://digizu.co.uk" class="font-semibold text-white underline">Digizu</a></p>
-            </div>
-
-            <div>
-                <img class="h-16 w-auto rounded-md border border-white/20 bg-white p-1" src="/images/dmcalogo.webp" alt="DMCA logo" />
-                <div class="mt-4 inline-block rounded-md bg-white p-1">
-                    <img class="h-6" src="/images/payments.webp" alt="Accepted payment methods" />
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
