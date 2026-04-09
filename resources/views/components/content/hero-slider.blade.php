@@ -30,7 +30,7 @@
                 <div class="absolute inset-0 bg-[linear-gradient(115deg,rgba(7,7,7,0.2)_0%,rgba(7,7,7,0.35)_34%,rgba(7,7,7,0.7)_72%,rgba(7,7,7,0.9)_100%)]"></div>
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,214,74,0.30),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(255,111,169,0.45),_transparent_28%)]"></div>
 
-                <div class="relative grid min-h-[39rem] content-end px-6 py-8 sm:min-h-[44rem] sm:px-10 sm:py-10 lg:min-h-[48rem] lg:grid-cols-[minmax(0,1fr)_16rem] lg:px-14 lg:py-14">
+                <div class="relative z-20 grid min-h-[39rem] content-end px-6 py-8 sm:min-h-[44rem] sm:px-10 sm:py-10 lg:min-h-[48rem] lg:grid-cols-[minmax(0,1fr)_16rem] lg:px-14 lg:py-14">
                     <div class="max-w-3xl text-white">
 
                         <h1 class="max-w-4xl font-heading text-[clamp(3.5rem,9vw,8rem)] font-black uppercase leading-[0.88] tracking-[-0.04em]" style="text-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);">
