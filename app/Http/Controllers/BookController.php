@@ -171,8 +171,6 @@ class BookController extends Controller
 
         $dates = $booking->availableEventDates()->groupBy('name');
 
-        dd($dates);
-
         $select_options = $booking->selectDateOptions();
 
         $page = Page::whereSlug(request()->path())->first();
