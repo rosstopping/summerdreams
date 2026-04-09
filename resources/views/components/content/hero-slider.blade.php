@@ -33,6 +33,8 @@
                 <div class="relative z-20 grid min-h-[39rem] content-end px-6 py-8 sm:min-h-[44rem] sm:px-10 sm:py-10 lg:min-h-[48rem] lg:grid-cols-[minmax(0,1fr)_16rem] lg:px-14 lg:py-14">
                     <div class="max-w-3xl text-white">
 
+                        <img src="/images/logo-white.png" alt="{{ config('app.name') }}" class="h-12 w-auto sm:h-14 md:h-24 mb-24" />
+
                         <h1 class="max-w-4xl font-heading text-[clamp(3.5rem,9vw,8rem)] font-black uppercase leading-[0.88] tracking-[-0.04em]" style="text-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);">
                             {{ data_get($content, 'title') }}
                         </h1>
