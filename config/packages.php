@@ -14,7 +14,7 @@
             ],
             'amount' => 50,
             'deposit' => 10,
-            'events' => ['VVIP Boat Party'],
+            'events' => ['Fantasy Boat Party'],
 		],
 		[
             'name' => 'PLATINUM',
@@ -29,21 +29,21 @@
             ],
             'amount' => 65,
             'deposit' => 20,
-            'events' => ['VVIP Boat Party'],
+            'events' => ['Fantasy Boat Party'],
 		],
 		[
             'name' => 'EVENT PACKAGE (A-LIST)',
             'description' => '',
             'includes' => [
                 'THE WHITE PARTY',
-                'VVIP YACHT PARTY',
+                'FANTASY BOAT PARTY',
                 'NATHAN DAWE TOUR',
                 'BUBBLE TROUBLE',
                 'KARMA POOL PARTY'
             ],
             'amount' => 125,
             'deposit' => 30,
-            'events' => ['VVIP Boat Party', 'The White Party', 'Nathan Dawe Tour', 'Tom Zanetti', 'Pool Party @ Karma Day Club'],
+            'events' => ['Fantasy Boat Party', 'The White Party', 'Nathan Dawe Tour', 'Tom Zanetti', 'Pool Party @ Karma Day Club'],
 		],
 		[
             'name' => 'VIP UPGRADES (A-LIST)',
@@ -56,6 +56,6 @@
             ],
             'amount' => 150,
             'deposit' => 40,
-            'events' => ['VVIP Boat Party', 'The White Party', 'Nathan Dawe Tour', 'Tom Zanetti', 'Pool Party @ Karma Day Club'],
+            'events' => ['Fantasy Boat Party', 'The White Party', 'Nathan Dawe Tour', 'Tom Zanetti', 'Pool Party @ Karma Day Club'],
 		],
 	];

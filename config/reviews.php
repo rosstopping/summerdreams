@@ -52,7 +52,7 @@ return [
 		'name' => 'GARY BEADLE',
 		'image' => 'https://summerdreams.com/wp-content/uploads/2019/03/geordie-shore-zante-booze-cruise-800x600.jpg',
 		'subtitle' => 'YOU HAVE TO DO VVIP IN ZANTE',
-		'content' => 'If you come to Zante you have to do VVIP Yacht Party this is my 4th time on it today and as usual there’s loads of fanny and I’m the middle of them all, absolutely perfect!'
+		'content' => 'If you come to Zante you have to do Fantasy Boat Party this is my 4th time on it today and as usual there’s loads of fanny and I’m the middle of them all, absolutely perfect!'
 	],
 	[
 		'name' => 'KIERAN TRIPPIER',
@@ -94,7 +94,7 @@ return [
 		'name' => 'SAX-A-DAN',
 		'image' => 'https://summerdreams.com/wp-content/uploads/2019/03/best-zante-boat-party-8-1-800x600.jpg',
 		'subtitle' => 'ATMOSPHERE IS SECOND TO NONE',
-		'content' => 'The atmosphere onboard VVIP Yacht Party is second to none and I play a lot of big events all over Europe. Even when it’s 5 times a week which is hard work I still jump out of bed buzzing as I love this event, would highly recommend VVIP to anyone visiting Zante'
+		'content' => 'The atmosphere onboard Fantasy Boat Party is second to none and I play a lot of big events all over Europe. Even when it’s 5 times a week which is hard work I still jump out of bed buzzing as I love this event, would highly recommend VVIP to anyone visiting Zante'
 	],
 	[
 		'name' => 'JB',

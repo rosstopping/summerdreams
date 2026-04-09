@@ -1,33 +1,34 @@
 <x-layouts.app>
 	@php
 		$weeklySchedule = [
-			['day' => 'Monday', 'event' => 'Nissi Beach Party'],
+			['day' => 'Monday', 'event' => 'Fantasy Boat Party'],
 			['day' => 'Tuesday', 'event' => 'Projekt Live with Nathan Dawe'],
 			['day' => 'Wednesday', 'event' => 'Paraiso presents Nova Mondo, Club Night'],
 			['day' => 'Thursday', 'event' => 'PAMBOS'],
 			['day' => 'Friday', 'event' => 'Vice Parties On The Roof'],
-			['day' => 'Saturday', 'event' => 'Sunset YACHT Party'],
+			['day' => 'Saturday', 'event' => 'Fantasy Boat Party'],
 			['day' => 'Sunday', 'event' => 'Sunset Sessions Pool Party'],
 		];
 
 		$eventDetails = [
 			[
 				'day' => 'Monday',
-				'title' => 'Nissi Beach Party',
+				'title' => 'Fantasy Boat Party',
 				'image' => '/images/events/vice-parties/IMG_5773.jpg',
 				'meta' => [
 					'Meeting Point: Pambos Napa Rocks Hotel',
 					'Meet At: 15:00',
 					'Sailing Time: 16:30 - 20:30',
 				],
-				'description' => 'The Sunset Yacht Party in Ayia Napa is a premium party experience combining great music, beautiful coastal views and an unforgettable sunset atmosphere. The yacht cruises the coast towards the Blue Lagoon with swim stops in crystal-clear waters. Onboard, guests enjoy free shots, special guest DJs and energetic hosts creating a vibrant party atmosphere as the sun sets over the Mediterranean.',
-				'music' => 'RnB, HipHop, Afrohouse, Afrobeats, Amapiano, Bashment, Old School',
+				'description' => 'Fantasy proudly claims the title of the world\'s best boat party, and it\'s not hard to understand why. As Ayia Napa\'s longest-running party event, it delivers an unforgettable experience against a breathtaking backdrop. Step aboard with hundreds of fellow partygoers from around the globe and get ready for what\'s sure to be the highlight of your holiday. One thing\'s for certain: you haven\'t truly experienced Napa until you\'ve been to Fantasy.',
+				'music' => 'Open-format party soundtrack with DJ and host onboard',
 				'includes' => [
-					'Afro-Caribbean buffet by Jerk n Jollof at the meeting point',
-					'AC coach transfer to the pier and back',
-					'Yacht cruise to the Blue Lagoon with swim stops',
-					'Free shots onboard',
-					'Weekly special guest DJs and hosts',
+					'DJ and host onboard making sure the boat does not stop rocking',
+					'30 minute free captain\'s cocktail bar',
+					'Group photo and video uploaded to YouTube',
+					'Party games and shenanigans (the craziest in Ayia Napa)',
+					'Swimming stops',
+					'4 hour coastal cruise',
 				],
 			],
 			[
@@ -80,8 +81,8 @@
 			],
 			[
 				'day' => 'Saturday',
-				'title' => 'Sunset YACHT Party',
-				'image' => '/images/events/vice-parties/IMG_3104.JPG',
+				'title' => 'Fantasy Boat Party',
+				'image' => '/images/events/fantasy-boat-party/3415513885.jpg',
 				'meta' => [
 					'Start Time: 20:30',
 					'Meeting Point: Pambos Napa Rocks Hotel',

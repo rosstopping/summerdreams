@@ -198,7 +198,7 @@ class DatabaseSeeder extends Seeder
                     'type' => 'text-and-image',
                     'fields' => [
                         'title' => 'Zante Discount Wristband',
-                        'content' => '<p><strong><span>If you pick your VVIP tickets up on your first day and start using your wristband straight away you can save at least 50 euro over your holiday, which makes booking a VVIP Yacht Party ticket even more of a no-brainer! Privilege has been running for many years in Zante and is well known and trusted.</span></strong></p>',
+                        'content' => '<p><strong><span>If you pick your VVIP tickets up on your first day and start using your wristband straight away you can save at least 50 euro over your holiday, which makes booking a Fantasy Boat Party ticket even more of a no-brainer! Privilege has been running for many years in Zante and is well known and trusted.</span></strong></p>',
                         'image' => 'bMdGJwPI14z4AuzdNZQgxjrhbV9VZC8ijjC9bA9N.jpg'
                     ]
                 ]

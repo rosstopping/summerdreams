@@ -62,7 +62,7 @@
         <div class="wrapper">
             <div class="relative px-6 text-center text-gray-900 z-20 pb-24">
                 <div class="max-w-2xl mx-auto">
-                    <x-ui.title>What To Expect on the Day - VVIP Yacht Party Timeline</x-ui.title>
+                    <x-ui.title>What To Expect on the Day - Fantasy Boat Party Timeline</x-ui.title>
                 </div>
 
                 <div class="mt-12 max-w-xl mx-auto px-6 prose text-gray-900 text-lg text-center leading-relaxed relative z-20 opacity-50">

@@ -2,13 +2,18 @@
 
 	return [
 		[
-			'name' => 'VVIP Boat Party',
+			'name' => 'Fantasy Boat Party',
 			'image' => 'https://summerdreams.com/wp-content/uploads/2018/12/banner-zante-boat-party.jpg',
-			'description' => '<p>Cruising around the Zante coastline is a holiday essential but it’s important to understand…</p>
-			<p>Not all boats are created equal!</p>
-			<p>One big reason VVIP is the #1 choice in Zante is because we have the best venue.</p>
-			<p>Our Super Yacht ‘Ikaros Palace’ allows 300 people to party in style over 3 large decks.</p>
-			<p>With VIP booths and tables, 3 bars, 2 dance-floors and a huge sound system our amazing venue is why VVIP is the #1 boat party in Zante.</p>',
+			'description' => '<p>Fantasy proudly claims the title of the world’s best boat party and it’s not hard to understand why. As Ayia Napa’s longest-running party event, it delivers an unforgettable experience set against a breathtaking backdrop. Step aboard with hundreds of fellow partygoers from around the globe and get ready for what’s sure to be the highlight of your holiday. One thing’s for certain: you haven’t truly experienced Napa until you’ve been to Fantasy.</p>
+			<p><strong>Highlights:</strong></p>
+			<ul>
+				<li>DJ and host on board making sure the boat does not stop rocking</li>
+				<li>30 minute free captain\'s cocktail bar</li>
+				<li>Group photo and video (uploaded to YouTube)</li>
+				<li>Party games and shenanigans (the craziest in Ayia Napa)</li>
+				<li>Swimming stops</li>
+				<li>4 hour coastal cruise</li>
+			</ul>',
             'amount' => 35,
             'start_date' => \Carbon\Carbon::parse('2024-06-01'),
             'repeat' => 'daily',

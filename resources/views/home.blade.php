@@ -138,8 +138,8 @@
 			schedule: [
 				{
 					day: 'Monday',
-					title: 'Nissi Beach Party',
-					description: 'A premium boat party experience combining big tunes, beautiful views and a sunset to remember.',
+					title: 'Fantasy Boat Party',
+					description: 'Ayia Napa\'s longest-running boat party with DJs, a free 30 minute captain\'s cocktail bar, swimming stops and a 4 hour coastal cruise.',
 						color: '#ffd54a',
 						image: '/images/events/vice-parties/IMG_5773.jpg'
 				},
@@ -173,7 +173,7 @@
 				},
 				{
 					day: 'Saturday',
-					title: 'Sunset YACHT Party',
+					title: 'Fantasy Boat Party',
 					description: 'The wildest night of the week with thousands in attendance, finishing up at AQUA Club.',
 						color: '#ffd54a',
 						image: '/images/events/vice-parties/IMG_3104.JPG'

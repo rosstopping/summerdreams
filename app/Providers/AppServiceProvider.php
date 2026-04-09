@@ -44,8 +44,8 @@ class AppServiceProvider extends ServiceProvider
          */
         seo()
             ->withUrl()
-            ->title(default: 'Zante Boat Party 2023 | VVIP Yacht Party | Zante Events | Zante Nightlife')
-            ->description(default: 'Voted the Best Boat Party in Europe the VVIP Yacht Party is not your average booze cruise. Guaranteed best night of your holiday. Book tickets for 2023.');
+            ->title(default: 'Fantasy Boat Party | Ayia Napa Events | Ayia Napa Nightlife')
+            ->description(default: 'Fantasy proudly claims the title of the world\'s best boat party. As Ayia Napa\'s longest-running party event, it\'s an unforgettable 4 hour coastal cruise with DJs, cocktails, swimming stops, and party games.');
 
         /**
          * Infer Title from URL

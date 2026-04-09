@@ -11,16 +11,17 @@ return new class extends Migration
     public function up(): void
     {
         $eventNameMap = [
-            'Sunset Yacht Party' => 'Nissi Beach Party',
-            'Sunset Boat Party' => 'Nissi Beach Party',
+            'Sunset Yacht Party' => 'Fantasy Boat Party',
+            'Sunset Boat Party' => 'Fantasy Boat Party',
+            'Nissi Beach Party' => 'Fantasy Boat Party',
             'Projekt Live' => 'Projekt Live with Nathan Dawe',
             'Projekt Live w/ Nathan Dawe' => 'Projekt Live with Nathan Dawe',
             'Pambos Pool Party' => 'PAMBOS',
             'Pambo\'s Pool Party' => 'PAMBOS',
             'Vice Parties' => 'Vice Parties On The Roof',
             'Vice' => 'Vice Parties On The Roof',
-            'Carnage Bar Crawl & Afterparty' => 'Sunset YACHT Party',
-            'Carnage Bar Crawl' => 'Sunset YACHT Party',
+            'Carnage Bar Crawl & Afterparty' => 'Fantasy Boat Party',
+            'Carnage Bar Crawl' => 'Fantasy Boat Party',
             'Sunset Sessions' => 'Sunset Sessions Pool Party',
             'Sunday Sessions' => 'Sunset Sessions Pool Party',
         ];
@@ -43,7 +44,7 @@ return new class extends Migration
     public function down(): void
     {
         $eventNameMap = [
-            'Nissi Beach Party' => 'Sunset Yacht Party',
+            'Fantasy Boat Party' => 'Sunset Yacht Party',
             'Projekt Live with Nathan Dawe' => 'Projekt Live w/ Nathan Dawe',
             'PAMBOS' => 'Pambos Pool Party',
             'Vice Parties On The Roof' => 'Vice Parties',
