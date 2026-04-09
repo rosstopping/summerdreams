@@ -29,7 +29,7 @@ class WhatsappJob implements ShouldQueue
     public function handle(): void
     {          
         Http::withHeaders([
-            'X-API-KEY' => '42e1e05a-d438-4764-990a-a3f0592ef8ea',
+            'X-API-KEY' => '76a662c5-1496-4eae-9fc2-370c1baa8d5b',
         ])->post('https://api.superchat.com/v1.0/messages', $this->data);
     }
 }

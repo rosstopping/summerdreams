@@ -81,28 +81,28 @@ class ContactController extends Controller
                 if ($page->slug === '2026') {
                     WhatsappJob::dispatch([
                         'from' => [
-                            'channel_id' => 'mc_GkjLTdrZOhT7CPwNpd7K4'
+                            'channel_id' => 'mc_bJfGMyirs47g5f5MP8mRp'
                         ],
                         'to' => [
                             ['identifier' => $number]
                         ],
                         'content' => [
                             'type' => 'whats_app_template',
-                            'template_id' => 'tn_xiTugUIhnjtvj7s7vR7Xy'
+                            'template_id' => 'tn_29YqAo33IJrOTOl6KcH4G'
                         ]
                     ])->delay(now()->addMinutes(1));
                 }
                 else {  
                     WhatsappJob::dispatch([
                         'from' => [
-                            'channel_id' => 'mc_GkjLTdrZOhT7CPwNpd7K4'
+                            'channel_id' => 'mc_bJfGMyirs47g5f5MP8mRp'
                         ],
                         'to' => [
                             ['identifier' => $number]
                         ],
                         'content' => [
                             'type' => 'whats_app_template',
-                            'template_id' => 'tn_sIL6EzBH2UPW3kkeICZtz'
+                            'template_id' => 'tn_29YqAo33IJrOTOl6KcH4G'
                         ]
                     ])->delay(now()->addMinutes(1));
                 }
