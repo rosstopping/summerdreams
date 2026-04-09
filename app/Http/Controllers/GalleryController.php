@@ -18,7 +18,7 @@ class GalleryController extends Controller
     {
         $images = $gallery->getMedia('images')->transform(fn ($image) => $image->getUrl())->toArray();
         
-        seo()->title($gallery->name.' | Gallery | VVIP Events Zante | '.setting('year'));
+        seo()->title($gallery->name.' | Gallery | Summer Dreams | '.setting('year'));
         seo()->description(data_get($gallery, 'description'));
 
         return view('gallery.show', compact('gallery', 'images'));

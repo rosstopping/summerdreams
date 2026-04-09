@@ -20,7 +20,7 @@ class LoginController extends Controller
             'reference' => ['required'],
         ]);
 
-        $reference = Str::of($request->reference)->replace('VVIP', '');
+        $reference = Str::of($request->reference)->replace('SD', '');
 
         $booking = Booking::query()
             ->where('reference', $reference)

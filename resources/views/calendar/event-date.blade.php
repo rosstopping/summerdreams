@@ -44,7 +44,7 @@
         },
         "organizer": {
             "@type": "Organization",
-            "name": "VVip Events Zante",
+            "name": "Summer Dreams",
             "url": "{{ url('/') }}",
             "sameAs": [
                 "https://www.facebook.com/vvipzante",

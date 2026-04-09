@@ -21,6 +21,6 @@ class NewsletterController extends Controller
 
         if (setting('newsletter_redirect') === '') return redirect()->back()->withSuccess(setting('newsletter_success_message', 'Thanks for signing up!'));
 
-        return redirect(setting('newsletter_redirect', '/zante-event-packages'))->withSuccess(setting('newsletter_success_message', 'Thanks for signing up!'));
+        return redirect(setting('newsletter_redirect', '/'))->withSuccess(setting('newsletter_success_message', 'Thanks for signing up!'));
     }
 }

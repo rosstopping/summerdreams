@@ -16,7 +16,7 @@ class SellerBookController extends Controller
     public function __invoke(Seller $seller, $event, $date, $payment_method, $currency)
     {
 
-        seo()->title('Your Booking | VVIP Events Zante | '.setting('year'));
+        seo()->title('Your Booking | Summer Dreams | '.setting('year'));
 
         $event = Event::findOrFail($event);
         
@@ -27,7 +27,7 @@ class SellerBookController extends Controller
     {
         $event = Event::findOrFail($event);
 
-        seo()->title('Your Booking | VVIP Events Zante | '.setting('year'));
+        seo()->title('Your Booking | Summer Dreams | '.setting('year'));
 
         $request->validate([
             'guests' => 'required|integer|min:1',

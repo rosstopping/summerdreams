@@ -25,7 +25,7 @@ class BookController extends Controller
     {
         $page = Page::whereSlug(request()->path())->first();
 
-        seo()->title(data_get($page, 'seo.title', 'Book | VVIP Events Zante | '.setting('year')));
+        seo()->title(data_get($page, 'seo.title', 'Book | Summer Dreams | '.setting('year')));
         seo()->description(data_get($page, 'seo.description'));
 
         return view('book.index');
@@ -34,11 +34,11 @@ class BookController extends Controller
     public function bookPackage(Package $package)
     {
 
-        seo()->title('Your Booking | VVIP Events Zante | '.setting('year'));
+        seo()->title('Your Booking | Summer Dreams | '.setting('year'));
 
         $page = Page::whereSlug(request()->path())->first();
 
-        seo()->title(data_get($page, 'seo.title', 'Book | VVIP Events Zante | '.setting('year')));
+        seo()->title(data_get($page, 'seo.title', 'Book | Summer Dreams | '.setting('year')));
         seo()->description(data_get($page, 'seo.description'));
 
         $start_date = $package->events->pluck('start_date')->sort()->first()->subDays(7);
@@ -55,11 +55,11 @@ class BookController extends Controller
          */
         abort_if(!$event->bookable, 404);
 
-        seo()->title('Your Booking | VVIP Events Zante | '.setting('year'));
+        seo()->title('Your Booking | Summer Dreams | '.setting('year'));
 
         $page = Page::whereSlug(request()->path())->first();
 
-        seo()->title(data_get($page, 'seo.title', 'Book | VVIP Events Zante | '.setting('year')));
+        seo()->title(data_get($page, 'seo.title', 'Book | Summer Dreams | '.setting('year')));
         seo()->description(data_get($page, 'seo.description'));
 
         $start_date = $event->start_date;
@@ -72,7 +72,7 @@ class BookController extends Controller
     public function submit($eventOrPackage, Request $request)
     {
 
-        seo()->title('Your Booking | VVIP Events Zante | '.setting('year'));
+        seo()->title('Your Booking | Summer Dreams | '.setting('year'));
 
         $request->validate([
             'type' => ['required', Rule::in(['event', 'package'])],
@@ -242,7 +242,7 @@ class BookController extends Controller
         seo()->description(data_get($page, 'seo.description'));
 
         if ($request->has('reference')) {
-            $booking = Booking::where('reference', Str::of($request->reference)->after('VVIP'))->first();
+            $booking = Booking::where('reference', Str::of($request->reference)->after('SD'))->first();
 
             if ($booking) {
                 $products = collect();

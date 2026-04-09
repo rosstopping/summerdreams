@@ -46,7 +46,7 @@ class HeroIntro extends Layout implements HasMedia
                 ->default('THIS IS'),
             Text::make('Title Line 2', 'title_line_2')
                 ->help('Second line of the title (e.g., "ZANTE")')
-                ->default('ZANTE'),
+                ->default('AYIA NAPA'),
             Text::make('Events Section Title', 'events_title')
                 ->help('Title for the events carousel section')
                 ->default('The Events'),

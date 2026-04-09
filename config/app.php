@@ -5,7 +5,7 @@ use Illuminate\Support\ServiceProvider;
 
 return [
 
-    'prefix' => env('APP_PREFIX', 'VVIP'),
+    'prefix' => env('APP_PREFIX', 'SD'),
 
     /*
     |--------------------------------------------------------------------------

@@ -92,7 +92,7 @@ class StripeCheckoutSessionCompleted implements ShouldQueue
             /**
              * Get the booking reference
              */
-            $reference = Str::of(data_get($this->webhookCall->payload, 'data.object.success_url'))->after('?reference=VVIP');
+            $reference = Str::of(data_get($this->webhookCall->payload, 'data.object.success_url'))->after('?reference=SD');
             
             /**
              * Check for a booking with this reference

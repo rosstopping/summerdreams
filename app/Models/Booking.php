@@ -84,7 +84,7 @@ class Booking extends Authenticatable
     protected function reference(): Attribute
     {
         return Attribute::make(
-            get: fn ($value) => config('app.prefix', 'VVIP') . $value,
+            get: fn ($value) => config('app.prefix', 'SD') . $value,
             set: fn ($value) => $value,
         );
     }

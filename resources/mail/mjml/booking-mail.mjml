@@ -4,7 +4,7 @@
   <mj-body background-color="#FFF7EF">
 
     <mj-include path="./resources/mail/inc/header.mjml" />
-    
+
     <!-- <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
         <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px" align="center">
@@ -12,13 +12,13 @@
         </mj-text>
       </mj-column>
     </mj-section> -->
-    
+
     <!-- <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
         <mj-image border-radius="20px" width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
       </mj-column>
     </mj-section> -->
-    
+
     <mj-section padding-top="30px" padding-bottom="2px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text padding-bottom="20px">
@@ -26,8 +26,8 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    
-  <!-- <mj-wrapper padding-left="20px" padding-right="20px">
+
+    <!-- <mj-wrapper padding-left="20px" padding-right="20px">
     <mj-section padding-top="0px" padding-bottom="20px">
       <mj-column padding-left="30px" padding-right="30px">
         <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px">
@@ -118,7 +118,7 @@
         <mj-button href="{{ url('admin/resources/bookings/'.$booking->id) }}">View / Edit Enquiry</mj-button>
         <mj-text padding-top="20px" align="center">
           Kindest Regards,</br>
-          VVIP Events Zante Team
+          Summer Dreams Team
         </mj-text>
       </mj-column>
     </mj-section> -->

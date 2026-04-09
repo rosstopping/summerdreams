@@ -96,7 +96,7 @@ class PayBalanceController extends Controller
         $stripeTransactionId = null;
         
         if ($request->has('reference')) {
-            $booking = Booking::where('reference', \Illuminate\Support\Str::of($request->reference)->after('VVIP'))->first();
+            $booking = Booking::where('reference', \Illuminate\Support\Str::of($request->reference)->after('SD'))->first();
             
             if ($booking && $booking->session_id) {
                 try {

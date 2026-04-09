@@ -69,8 +69,8 @@ class CalendarController extends Controller
         $nextWeek = $weekIndex < count($weeks) - 1 ? $weekIndex + 1 : null;
         
         // SEO
-        seo()->title('Event Calendar - VVIP Events Zante');
-        seo()->description('Browse all upcoming VVIP Events in Zante. View our complete event calendar with dates and details for all parties and club nights.');
+        seo()->title('Event Calendar - Summer Dreams');
+        seo()->description('Browse all upcoming Summer Dreams Events in Ayia Napa. View our complete event calendar with dates and details for all parties and club nights.');
         
         return view('calendar.index', compact('eventDates', 'currentWeek', 'currentDate', 'events', 'prevMonth', 'nextMonth', 'weekIndex', 'prevWeek', 'nextWeek'));
     }
@@ -91,7 +91,7 @@ class CalendarController extends Controller
         }
         
         // SEO
-        seo()->title($event->name . ' - ' . $eventDate->format('l, F j, Y') . ' - VVip Events Zante');
+        seo()->title($event->name . ' - ' . $eventDate->format('l, F j, Y') . ' - Summer Dreams');
         seo()->description('Book tickets for ' . $event->name . ' on ' . $eventDate->format('l, F j, Y') . '. ' . strip_tags($event->excerpt ?? ''));
         
         if ($event->getFirstMedia('images')) {

@@ -58,7 +58,7 @@ class PaymentReminderJob implements ShouldQueue
                     'X-AUTH-KEY' => config('sms.api_key'),
                 ])->post($api, [
                     'from' => config('sms.sender_id'),
-                    'message_body' => 'This is a reminder that your payment of £'.$payment->amount.' will be taken tomorrow. Thank you for booking with VVIP.',
+                    'message_body' => 'This is a reminder that your payment of £'.$payment->amount.' will be taken tomorrow. Thank you for booking with Summer Dreams.',
                     'to' => [
                         [
                             'phone' => [$phoneNumber]
