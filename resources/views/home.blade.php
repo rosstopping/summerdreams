@@ -219,7 +219,7 @@
 
 				<div class="px-4 pb-6 sm:px-8 sm:pb-8">
 					<div class="relative overflow-hidden rounded-[1.75rem] border-4 border-black bg-white shadow-[8px_8px_0_0_#171717]">
-						<template x-for="(item, index) in schedule" :key="item.title">
+						<template x-for="(item, index) in schedule" :key="item.day">
 							<div x-show="activeDay === index" x-transition:enter="transition ease-out duration-250" x-transition:enter-start="opacity-0 translate-x-3" x-transition:enter-end="opacity-100 translate-x-0" class="grid gap-0 lg:grid-cols-[0.38fr_0.62fr]" x-cloak>
 								<div class="flex items-center border-b-4 border-black p-6 lg:border-b-0 lg:border-r-4 lg:p-8" :style="`background:${item.color}`">
 									<div>
