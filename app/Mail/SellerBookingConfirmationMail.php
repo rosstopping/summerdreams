@@ -33,7 +33,7 @@ class SellerBookingConfirmationMail extends Mailable
     {
         return $this
             ->to($this->booking->email)
-            ->bcc('info@summerdreamsholidays.com')
+            ->bcc('contact@summerdreamsholidays.com')
             ->subject('Thank you for booking with '.config('app.name'))
             ->view('mail.seller-booking-confirmation');
     }

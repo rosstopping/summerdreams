@@ -138,8 +138,8 @@
 			schedule: [
 				{
 					day: 'Monday',
-					title: 'Fantasy Boat Party',
-					description: 'Ayia Napa\'s longest-running boat party with DJs, a free 30 minute captain\'s cocktail bar, swimming stops and a 4 hour coastal cruise.',
+					title: 'Nissi Beach Party',
+					description: 'Brand new beach party for 2026, at the World Famous Nissi Beach.',
 						color: '#ffd54a',
 						image: '/images/events/calendar/MONDAY nissi beach party.jpg'
 				},

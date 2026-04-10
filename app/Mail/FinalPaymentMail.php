@@ -35,7 +35,7 @@ class FinalPaymentMail extends Mailable
     {
         return $this
             ->to($this->booking->email)
-            ->bcc('info@summerdreamsholidays.com')
+            ->bcc('contact@summerdreamsholidays.com')
             ->subject('Thank you for payment')
             ->view('mail.final-payment-mail');
     }

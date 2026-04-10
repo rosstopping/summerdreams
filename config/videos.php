@@ -18,7 +18,7 @@ return [
         [
                 'video' => 'https://www.youtube.com/embed/C4yJ_jhRyWw',
                 'title' => 'VIP Mercedes Transfers',
-                'description' => 'All Summer Dreams event ticket holders benefit from our Concierge service which includes VIP Mercedes Mini Bus transfers &amp; private speedboat hire. All at heavily discounted rates. Get in touch for a quote. Very, very cheap rates. Email: info@summerdreamsholidays.com',
+                'description' => 'All Summer Dreams event ticket holders benefit from our Concierge service which includes VIP Mercedes Mini Bus transfers &amp; private speedboat hire. All at heavily discounted rates. Get in touch for a quote. Very, very cheap rates. Email: contact@summerdreamsholidays.com',
         ],
 
 

@@ -38,7 +38,7 @@ class BookingMail extends Mailable
         return $this
             ->to(config('mail.from.address'))
             // ->bcc('ross@digizu.co.uk')
-            ->bcc('info@summerdreamsholidays.com')
+            ->bcc('contact@summerdreamsholidays.com')
             ->subject($this->subject)
             ->view('mail.booking-mail');
     }

@@ -71,7 +71,7 @@ class ContactController extends Controller
             'data' => $validated
         ]);
 
-        Mail::to($form->name === 'Popup' ? 'info@summerdreamsholidays.com' : config('mail.from.address'))
+        Mail::to($form->name === 'Popup' ? 'contact@summerdreamsholidays.com' : config('mail.from.address'))
             ->queue(new ContactFormMail($validated, $form->name ?: $page->slug));
 
         if (config('app.env') === 'production' && data_get($validated, 'email')) {

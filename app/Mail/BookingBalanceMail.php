@@ -33,7 +33,7 @@ class BookingBalanceMail extends Mailable
     {
         return $this
             ->to($this->booking->email)
-            ->bcc('info@summerdreamsholidays.com')
+            ->bcc('contact@summerdreamsholidays.com')
             ->subject('Final Deposit Payment | '.config('app.name'))
             ->view('mail.booking-balance');
     }
