@@ -47,8 +47,9 @@
             "name": "Summer Dreams",
             "url": "{{ url('/') }}",
             "sameAs": [
-                "https://www.facebook.com/vvipzante",
-                "https://www.instagram.com/vvipzante"
+                "https://www.facebook.com/profile.php?id=61588391252548",
+                "https://instagram.com/summerdreamsholidays",
+                "https://www.tiktok.com/@summerdreamsholidays"
             ]
         }
     }
