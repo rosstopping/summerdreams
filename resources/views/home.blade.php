@@ -141,28 +141,28 @@
 					title: 'Fantasy Boat Party',
 					description: 'Ayia Napa\'s longest-running boat party with DJs, a free 30 minute captain\'s cocktail bar, swimming stops and a 4 hour coastal cruise.',
 						color: '#ffd54a',
-						image: '/images/events/vice-parties/IMG_5773.jpg'
+						image: '/images/events/calendar/MONDAY nissi beach party.jpg'
 				},
 				{
 					day: 'Tuesday',
 					title: 'Projekt Live with Nathan Dawe',
 					description: 'Chart-topping DJ and producer Nathan Dawe is packing serious heat on the decks all Summer long.',
 						color: '#ff6fa9',
-						image: '/images/events/vice-parties/IMG_5774.jpg'
+						image: '/images/events/calendar/TUESDAY projekt.jpg'
 				},
 				{
 					day: 'Wednesday',
 					title: 'Paraiso',
 					description: 'House music and high energy with weekly special guest DJs in an underground club.',
 						color: '#7fe7ff',
-						image: '/images/events/vice-parties/IMG_5775.jpg'
+						image: '/images/events/calendar/WEDNESDAY paraiso.jpg'
 				},
 				{
 					day: 'Thursday',
 					title: 'PAMBOS',
 					description: 'No Napa holiday is complete without a day sesh at Pambo\'s, the ultimate pool party venue.',
 						color: '#fff0be',
-						image: '/images/events/pambos/IMG_5768.jpg'
+						image: '/images/events/calendar/THURSDAY pambos.jpg'
 				},
 				{
 					day: 'Friday',
@@ -176,14 +176,14 @@
 					title: 'Fantasy Boat Party',
 					description: 'The wildest night of the week with thousands in attendance, finishing up at AQUA Club.',
 						color: '#ffd54a',
-						image: '/images/events/vice-parties/IMG_3104.JPG'
+						image: '/images/events/calendar/SATURDAY fantasy.jpg'
 				},
 				{
 					day: 'Sunday',
 					title: 'Sunset Sessions Pool Party',
 					description: 'Keeping Napa classy - end the week in style with Sunset Sessions.',
 						color: '#7fe7ff',
-						image: '/images/events/pambos/IMG_5772.jpg'
+						image: '/images/events/calendar/SUNDAY sunset sessions.jpg'
 				}
 			],
 			next() { this.activeDay = (this.activeDay + 1) % this.schedule.length },
