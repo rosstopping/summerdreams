@@ -4,6 +4,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "postbuild": "npm run build:prune",
+    "build:prune": "node scripts/prune-vite-build.mjs",
     "build-calendar": "cd nova-components/Calendar && npm run dev",
     "build-calendar-prod": "cd nova-components/Calendar && npm run prod"
   },

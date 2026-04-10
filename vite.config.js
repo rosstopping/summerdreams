@@ -8,6 +8,11 @@ export default defineConfig({
     hmr: {
         host: 'summerdreams',
     },
+    build: {
+        // Avoid deleting public/build before new assets are written,
+        // which prevents transient "manifest not found" 500s during deploy builds.
+        emptyOutDir: false,
+    },
     plugins: [
         viteWebfontDownload([
             'https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
