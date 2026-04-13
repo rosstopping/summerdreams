@@ -37,7 +37,7 @@ class AddExtraController extends Controller
         /**
          * Setup stripe payment
          */
-        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+        $stripe = new \Stripe\StripeClient(config('services.stripe.secret_sd'));
 
         /**
          * Create the stripe user

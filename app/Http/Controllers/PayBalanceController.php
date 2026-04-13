@@ -100,7 +100,7 @@ class PayBalanceController extends Controller
             
             if ($booking && $booking->session_id) {
                 try {
-                    $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+                    $stripe = new \Stripe\StripeClient(config('services.stripe.secret_sd'));
                     $session = $stripe->checkout->sessions->retrieve($booking->session_id, []);
                     $stripeTransactionId = $session->payment_intent;
                 } catch (\Exception $e) {

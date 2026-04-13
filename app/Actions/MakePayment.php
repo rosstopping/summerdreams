@@ -19,7 +19,7 @@ class MakePayment
     }
 
     public function pay() {
-        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+        $stripe = new \Stripe\StripeClient(config('services.stripe.secret_sd'));
 
         $customer = $stripe->customers->create([
             'name' => data_get($this->user, 'name'),

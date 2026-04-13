@@ -35,6 +35,8 @@ return [
         'model' => App\Models\User::class,
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
+        'key_sd' => env('STRIPE_KEY_SD'),
+        'secret_sd' => env('STRIPE_SECRET_SD'),
     ],
 
     'drip' => [
