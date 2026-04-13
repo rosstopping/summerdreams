@@ -121,7 +121,7 @@ class NovaServiceProvider extends NovaApplicationServiceProvider
                     // MenuItem::lens(\App\Nova\Booking::class, \App\Nova\Lenses\SellerBookings::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\Payment::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::link('Calendar', 'calendar')->canSee(fn ($request) => $request->user()->master),
-                    // MenuItem::resource(\App\Nova\Referral::class)->canSee(fn ($request) => $request->user()->master),
+                    MenuItem::resource(\App\Nova\Referral::class)->canSee(fn ($request) => $request->user()->master),
                     // MenuItem::resource(\App\Nova\Seller::class)->canSee(fn ($request) => $request->user()->master),
                     MenuItem::resource(\App\Nova\ContactForm::class)->canSee(fn ($request) => $request->user()->master),
                 ])->icon('users')->collapsable(),

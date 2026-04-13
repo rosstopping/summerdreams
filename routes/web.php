@@ -129,3 +129,4 @@ Route::get('calendar/event/{event:slug}/{date}', [CalendarController::class, 'sh
 Route::get('{url}', PageController::class)->name('page')->where('url', '.*')->where('url', '^(?!admin|api|nova-api).*$');
 
 Route::stripeWebhooks('webhook/stripe');
+Route::post('webhook/stripe/{configKey}', Spatie\StripeWebhooks\StripeWebhooksController::class);
