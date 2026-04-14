@@ -42,10 +42,10 @@ class AppServiceProvider extends ServiceProvider
         /**
          * SEO Defaults
          */
-        seo()
+        seo()           
             ->withUrl()
-            ->title(default: 'Fantasy Boat Party | Ayia Napa Events | Ayia Napa Nightlife')
-            ->description(default: 'Fantasy proudly claims the title of the world\'s best boat party. As Ayia Napa\'s longest-running party event, it\'s an unforgettable 4 hour coastal cruise with DJs, cocktails, swimming stops, and party games.');
+            ->title(default: 'Summer Dreams - Home of Ayia Napa\'s biggest events')
+            ->description(default: 'When It Comes to Your Napa Holiday, This Is What Dreams Are Made Of. Summer Dreams.');
 
         /**
          * Infer Title from URL

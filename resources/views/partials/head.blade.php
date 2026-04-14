@@ -1,8 +1,9 @@
-<link rel="icon" href="https://summerdreams.com/wp-content/uploads/2020/12/cropped-002-004-Social-Media-Profile-Pics-3-1-100x100.png" sizes="32x32" />
-<link rel="icon" href="https://summerdreams.com/wp-content/uploads/2020/12/cropped-002-004-Social-Media-Profile-Pics-3-1-300x300.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://summerdreams.com/wp-content/uploads/2020/12/cropped-002-004-Social-Media-Profile-Pics-3-1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://summerdreams.com/wp-content/uploads/2020/12/cropped-002-004-Social-Media-Profile-Pics-3-1-300x300.png" />
-<meta name="facebook-domain-verification" content="lprwnfxppcw0tkw0ovsfucijeio7ar" />
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<link rel="manifest" href="/site.webmanifest" />
+{{-- <meta name="facebook-domain-verification" content="lprwnfxppcw0tkw0ovsfucijeio7ar" /> --}}
 
 @unless(request()->is('/') || request()->is('2026') || request()->is('reserve') || request()->is('book') || request()->is('book/*') || request()->is('account') || request()->is('account/*'))
 <script
@@ -50,11 +51,11 @@
 {{-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d5669231c2a99e5"></script> --}}
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+{{-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-KNWCMV25');</script>
+  })(window,document,'script','dataLayer','GTM-KNWCMV25');</script> --}}
   <!-- End Google Tag Manager -->
   
 
