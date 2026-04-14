@@ -23,7 +23,7 @@
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text padding-bottom="20px">
           Dear {{ $booking->name }},<br></br>
-          Thank you for choosing VVIP Zante for your events this Summer! Please use the link below to pay your deposit to complete your booking.<br></br>
+          Thank you for choosing Summer Dreams for your events this Summer! Please use the link below to pay your deposit to complete your booking.<br></br>
 
           <a href="{{ route('checkout', $booking->getRawOriginal('reference')) }}">{{ route('checkout', $booking->getRawOriginal('reference')) }}</a><br /><br />
 

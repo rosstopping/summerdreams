@@ -23,7 +23,7 @@
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
           Dear {{ $booking->name }},<br></br>
-          We are pleased to confirm your booking with VVIP Zante as noted in the below confirmation.
+          We are pleased to confirm your booking with Summer Dreams as noted in the below confirmation.
         </mj-text>
 
       </mj-column>
