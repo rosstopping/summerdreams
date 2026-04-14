@@ -28,14 +28,14 @@ class MailchimpJob implements ShouldQueue
      */
     public function handle(): void
     {
-        $client = new ApiClient();
-        $client->setConfig([
-            'apiKey' => env('MAILCHIMP_API_KEY'),
-            'server' => env('MAILCHIMP_SERVER_PREFIX'),
-        ]);
-        $client->lists->addListMember(env('MAILCHIMP_LIST_ID'), [
-            "email_address" => $this->email,
-            "status" => "subscribed",
-        ]);
+        // $client = new ApiClient();
+        // $client->setConfig([
+        //     'apiKey' => env('MAILCHIMP_API_KEY'),
+        //     'server' => env('MAILCHIMP_SERVER_PREFIX'),
+        // ]);
+        // $client->lists->addListMember(env('MAILCHIMP_LIST_ID'), [
+        //     "email_address" => $this->email,
+        //     "status" => "subscribed",
+        // ]);
     }
 }
