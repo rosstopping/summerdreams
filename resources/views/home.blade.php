@@ -139,7 +139,7 @@
 				{
 					day: 'Monday',
 					title: 'Nissi Beach Party',
-					description: 'Brand new beach party for 2026, at the World Famous Nissi Beach.',
+					description: 'The world famous Nissi beach party back for 2026.',
 						color: '#ffd54a',
 						image: '/images/events/calendar/MONDAY nissi beach party.jpg'
 				},

@@ -1,7 +1,7 @@
 <x-layouts.app>
 	@php
 		$weeklySchedule = [
-			['day' => 'Monday', 'event' => 'Fantasy Boat Party'],
+			['day' => 'Monday', 'event' => 'Nissi Beach Party'],
 			['day' => 'Tuesday', 'event' => 'Projekt Live with Nathan Dawe'],
 			['day' => 'Wednesday', 'event' => 'Paraiso presents Nova Mondo, Club Night'],
 			['day' => 'Thursday', 'event' => 'PAMBOS'],
@@ -13,28 +13,31 @@
 		$eventDetails = [
 			[
 				'day' => 'Monday',
-				'title' => 'Fantasy Boat Party',
-				'image' => '/images/events/vice-parties/IMG_5773.jpg',
+				'title' => 'Nissi Beach Party',
+				'image' => '/images/events/calendar/MONDAY nissi beach party.jpg',
 				'meta' => [
-					'Meeting Point: Pambos Napa Rocks Hotel',
-					'Meet At: 15:00',
-					'Sailing Time: 16:30 - 20:30',
+					'Meeting Point: Nissi Bay Beach Bar',
+					'Meet At: 15:00'
 				],
-				'description' => 'Fantasy proudly claims the title of the world\'s best boat party, and it\'s not hard to understand why. As Ayia Napa\'s longest-running party event, it delivers an unforgettable experience against a breathtaking backdrop. Step aboard with hundreds of fellow partygoers from around the globe and get ready for what\'s sure to be the highlight of your holiday. One thing\'s for certain: you haven\'t truly experienced Napa until you\'ve been to Fantasy.',
-				'music' => 'Open-format party soundtrack with DJ and host onboard',
-				'includes' => [
-					'DJ and host onboard making sure the boat does not stop rocking',
-					'30 minute free captain\'s cocktail bar',
-					'Group photo and video uploaded to YouTube',
-					'Party games and shenanigans (the craziest in Ayia Napa)',
-					'Swimming stops',
-					'4 hour coastal cruise',
-				],
+				'description' => 'Summer Dreams Takes over the Nissi Bay Beach Bar situated in the centre of one of the World’s most famous beaches \'Nissi Beach\'.
+
+Join us, as the Island\'s most renowned DJ\'s spin the soundtrack to your Summer. 
+
+Then hit the strip in the evening and get down to Aqua Club for the After Party!',
+				'music' => 'Open-format',
+				// 'includes' => [
+				// 	'DJ and host onboard making sure the boat does not stop rocking',
+				// 	'30 minute free captain\'s cocktail bar',
+				// 	'Group photo and video uploaded to YouTube',
+				// 	'Party games and shenanigans (the craziest in Ayia Napa)',
+				// 	'Swimming stops',
+				// 	'4 hour coastal cruise',
+				// ],
 			],
 			[
 				'day' => 'Tuesday',
 				'title' => 'Projekt Live with Nathan Dawe',
-				'image' => '/images/events/vice-parties/IMG_5774.jpg',
+				'image' => '/images/events/calendar/TUESDAY projekt.jpg',
 				'meta' => [
 					'Entry: 21:30 - 01:00',
 					'Venue: Pambos Napa Rocks',
@@ -50,7 +53,7 @@
 			[
 				'day' => 'Wednesday',
 				'title' => 'Paraiso Club Night',
-				'image' => '/images/events/vice-parties/IMG_5775.jpg',
+				'image' => '/images/events/calendar/WEDNESDAY paraiso.jpg',
 				'meta' => [
 					'Entry: 01:00 - 05:00',
 					'Venue: Shuffle Club',
@@ -59,13 +62,13 @@
 			],
 			[
 				'day' => 'Thursday',
-				'title' => 'PAMBOS',
-				'image' => '/images/events/pambos/IMG_5768.jpg',
+				'title' => 'Pambos Pool Party',
+				'image' => '/images/events/pambos/be90457a-e196-49a5-a947-ddde7fe66b2b.JPG',
 				'meta' => [
 					'Entry: 14:00 - 19:00',
 					'Venue: Pambos Napa Rocks',
 				],
-				'description' => 'The spacious pool side of the Napa Rocks Hotel is home to the Pambos Pool Party. With revellers often in their thousands, this is one of the hottest pool parties in Napa.',
+				'description' => 'The spacious pool side of the Napa Rocks Hotel is home to the Pambos Pool Party. With revellers often in their thousands, this is one of the hottest pool parties in Napa. With plenty of VIP Upgrades, you can really make a splash on Thursdays at Pambos!',
 			],
 			[
 				'day' => 'Friday',
@@ -84,16 +87,17 @@
 				'title' => 'Fantasy Boat Party',
 				'image' => '/images/events/fantasy-boat-party/3415513885.jpg',
 				'meta' => [
-					'Start Time: 20:30',
-					'Meeting Point: Pambos Napa Rocks Hotel',
-					'After Party: Aqua Club',
+					'Meeting point: Ayia Napa Harbour',
+					'Boarding from: 16:15',
+					'Sailing: 17:00',
+					'Return: 21:00',
 				],
-				'description' => 'Carnage Bar Crawl takes you to the biggest and best venues all over town with crazy drinking games, free shots, discounted drinks and giveaways all night. It finishes at Ayia Napa\'s famous after party club, AQUA Club. With groups of up to 1000 partygoers and 12 hours of partying potential, be ready for a night of carnage.',
+				'description' => 'Fantasy proudly claims the title of the world’s best boat party—and it’s not hard to understand why. As Ayia Napa’s longest-running party event, it delivers an unforgettable experience set against a breathtaking backdrop. Step aboard with hundreds of fellow partygoers from around the globe and get ready for what’s sure to be the highlight of your holiday. One thing’s for certain: you haven’t truly experienced Napa until you’ve been to Fantasy.',
 			],
 			[
 				'day' => 'Sunday',
 				'title' => 'Sunset Sessions Pool Party',
-				'image' => '/images/events/pambos/IMG_5772.jpg',
+				'image' => '/images/events/calendar/SUNDAY sunset sessions.jpg',
 				'meta' => [
 					'Entry: 16:00 - 22:00',
 					'Venue: Fedrania Gardens Hotel',

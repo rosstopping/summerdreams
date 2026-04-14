@@ -7,70 +7,94 @@
 
     <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
-        <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px" align="center">
-          Booking Confirmation
+        <mj-text font-size="26px" line-height="30px" font-weight="800" align="center" letter-spacing="-1px">
+          Booking Confirmed!
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- <mj-section padding-top="30px" padding-bottom="0px">
-      <mj-column padding-left="30px" padding-right="30px">
-        <mj-image border-radius="20px" width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
-      </mj-column>
-    </mj-section> -->
-
-    <mj-section padding-top="30px" padding-bottom="30px">
+    <mj-section padding-top="20px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
-          Hi {{ $booking->name }},<br></br>
-          Thank you for booking with VVIP Zante.
+          Dear {{ $booking->name }},
+          <br /><br />
+          Your booking is confirmed — thank you! We can't wait to have you with us.
         </mj-text>
-        <mj-text font-weight="bold">
-          <br />
-          Picking up wristbands
-        </mj-text>
-        <mj-text>
-          <br />
-          Our Resort Team will be in touch before you leave to arrange an appointment for you to pick up wristbands from our office @ IKON Club on the Laganas main road.<br />
-          Location - IKON Club.
-        </mj-text>
-        <mj-text>
-          <br />
-          We recommend you do this if possible as there can be over 1,000 people milling about on event days so it can be a bit chaotic.
-        </mj-text>
-        <mj-text>
-          <br />
-          Or you can show this confirmation email on the door of the event and you can get your wristbands then from our team.
-        </mj-text>
-
       </mj-column>
     </mj-section>
 
-    <mj-section padding-top="2px" padding-bottom="2px">
-      <mj-column width="100%" padding-left="30px" padding-right="30px">
-        <mj-image border-radius="20px" href="https://vvipeventszante.com" align="center" src="{{ url('images/booking-confirmation.jpeg') }}" width="600px"></mj-image>
-      </mj-column>
-    </mj-section>
+    {{-- Paying the remainder --}}
+    <mj-wrapper border-radius="20px" border="3px solid #171717" background-color="#FFD54A" padding-top="20px" padding-bottom="20px" padding-left="10px" padding-right="10px">
+      <mj-section padding-top="0px" padding-bottom="0px">
+        <mj-column padding-left="20px" padding-right="20px">
+          <mj-text font-size="13px" font-weight="800" letter-spacing="3px" color="#171717" text-transform="uppercase">
+            Paying the Remainder
+          </mj-text>
+          <mj-text color="#171717" padding-top="10px">
+            You need to pay 50% of the balance of your package 7 days before you arrive, and then the remaining 50% in resort during your welcome meeting.
+            <br /><br />
+            You can do that at any time by logging into your account using the link below. You will need to enter your arrival date, booking reference number (below) and your surname.
+          </mj-text>
+          <mj-button href="{{ url('account') }}" background-color="#171717" color="#FFD54A" border-radius="999px" font-weight="800" font-size="12px" letter-spacing="2px">
+            MY ACCOUNT
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
 
-    <mj-section padding-top="30px" padding-bottom="30px">
-      <mj-column width="100%" padding-left="30px" padding-right="30px">
-        <mj-text font-weight="bold">
-          Event Details
-        </mj-text>
-        <mj-text>
-          <br />
-          Before you leave check out our event details page which tells you everything you need to know about times and locations.
-          <br /><br />
-          A-List Event Info - link https://a-listzante.com/event-info/
-          <br /><br />
-          Many thanks
-          <br /><br />
-          Abby D
-          <br /><br />
-          VVIP Zante
-        </mj-text>
-      </mj-column>
-    </mj-section>
+    {{-- Picking up wristbands --}}
+    <mj-wrapper border-radius="20px" border="3px solid #171717" background-color="#7FE7FF" padding-top="20px" padding-bottom="20px" padding-left="10px" padding-right="10px" css-class="mj-section-margin" padding-top="20px">
+      <mj-section padding-top="0px" padding-bottom="0px">
+        <mj-column padding-left="20px" padding-right="20px">
+          <mj-text font-size="13px" font-weight="800" letter-spacing="3px" color="#171717" text-transform="uppercase">
+            Picking Up Wristbands
+          </mj-text>
+          <mj-text color="#171717" padding-top="10px">
+            Our Resort Team will be in touch before you leave to arrange an appointment for you to pick up your wristbands from our office at Pambos Napa Rocks Hotel.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    {{-- Event Details --}}
+    <mj-wrapper border-radius="20px" border="3px solid #171717" background-color="#FF6FA9" padding-top="20px" padding-bottom="20px" padding-left="10px" padding-right="10px">
+      <mj-section padding-top="0px" padding-bottom="0px">
+        <mj-column padding-left="20px" padding-right="20px">
+          <mj-text font-size="13px" font-weight="800" letter-spacing="3px" color="#171717" text-transform="uppercase">
+            Event Details
+          </mj-text>
+          <mj-text color="#171717" padding-top="10px">
+            Before you leave, check out our event details page which tells you everything you need to know about times and locations.
+          </mj-text>
+          <mj-button href="https://summerdreamsholidays.com/event" background-color="#171717" color="#FFFFFF" border-radius="999px" font-weight="800" font-size="12px" letter-spacing="2px">
+            VIEW EVENT DETAILS
+          </mj-button>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+
+    {{-- Fully Loaded Perks --}}
+    <mj-wrapper border-radius="20px" border="3px solid #171717" background-color="#FFF0BE" padding-top="20px" padding-bottom="20px" padding-left="10px" padding-right="10px">
+      <mj-section padding-top="0px" padding-bottom="0px">
+        <mj-column padding-left="20px" padding-right="20px">
+          <mj-text font-size="13px" font-weight="800" letter-spacing="3px" color="#171717" text-transform="uppercase">
+            Summer Dreams Fully Loaded Package
+          </mj-text>
+          <mj-text color="#171717" padding-top="10px">
+            Here is a list of all the perks included with the Summer Dreams Fully Loaded Package.
+          </mj-text>
+          <mj-button href="https://summerdreamsholidays.com/event" background-color="#171717" color="#FFD54A" border-radius="999px" font-weight="800" font-size="12px" letter-spacing="2px">
+            VIEW PERKS
+          </mj-button>
+          <mj-text color="#171717" padding-top="10px">
+            Not booked Fully Loaded? Drop us a message to upgrade.
+            <br /><br />
+            <strong>+447956088925</strong><br />
+            <a href="mailto:contact@summerdreamsholidays.com" style="color:#171717;">contact@summerdreamsholidays.com</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
 
     <mj-wrapper padding-left="20px" padding-right="20px">
       <mj-section padding-top="0px" padding-bottom="20px">
@@ -160,11 +184,15 @@
     <mj-section padding-top="30px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
+          Many thanks,
+          <br /><br />
+          Sadie F<br />
+          Summer Dreams Holidays
         </mj-text>
       </mj-column>
     </mj-section>
 
-    <!-- <mj-include path="./resources/mail/inc/footer.mjml" /> -->
+    <mj-include path="./resources/mail/inc/footer.mjml" />
 
   </mj-body>
 </mjml>
