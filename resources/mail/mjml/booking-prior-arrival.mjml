@@ -4,7 +4,7 @@
   <mj-body background-color="#FFF7EF">
 
     <mj-include path="./resources/mail/inc/header.mjml" />
-    
+
     <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
         <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px" align="center">
@@ -12,42 +12,42 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    
+
     <!-- <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
-        <mj-image border-radius="20px" width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
+        <mj-image width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
       </mj-column>
     </mj-section> -->
-    
+
     <mj-section padding-top="30px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
-            We hope you're ready for an amazing holiday in Zante!
+          We hope you're ready for an amazing holiday in Zante!
 
-            <br /><br />This is a reminder, if you haven't already, for you to log into your account and pay the final part of the deposit which is either £25 or £35 per person, depending upon when you booked.
+          <br /><br />This is a reminder, if you haven't already, for you to log into your account and pay the final part of the deposit which is either £25 or £35 per person, depending upon when you booked.
 
-            <br /><br />This is important as it's the only way we can guarantee you White Party tickets as we have to buy them before you arrive.
+          <br /><br />This is important as it's the only way we can guarantee you White Party tickets as we have to buy them before you arrive.
 
-            <br /><br />You can login here: <a href="https://vvipeventszante.com/login">https://vvipeventszante.com/login</a>
+          <br /><br />You can login here: <a href="https://vvipeventszante.com/login">https://vvipeventszante.com/login</a>
 
-            <br /><br />You will need your booking reference which is on your booking confirmation.
+          <br /><br />You will need your booking reference which is on your booking confirmation.
 
-            <br /><br />If you need me to resend this, let me know.
-            <br /><br />Please bring the balance in cash which means you will avoid any exchange rate and card fees. (if you have just booked one event with us, or paid off your package in full then there is no balance to pay of course)
-            <br /><br />You can pay in pound sterling or euros.
-            <br /><br />We advise coming down as soon as you arrive, so you can activate your Privilege discount wristband straight away. We are open all day from 11am - 5pm.
-            <br /><br />If you arrive with an event the first night then we will meet you that evening at IKON or Pure or if you arrive on a Sunday we will arrange to meet you outside Karma for The White Party
-            <br /><br />Once you arrive in Zante you will often be subject to hard sells by hotel reps and street sellers. They will say anything to get you to buy their events - we are cancelled, we poison puppies, you name it they will say it to get you to buy their events so they can earn commission from you. Paying us a large deposit for the best events in Zante then falling for these lies and handing over money is nothing short of madness so don't fall for it.
-            <br /><br />Every year we lose a few groups to certain hotel reps and they always come by and say 'they lied to us and it was a massive mistake'
-            <br /><br />Don't mess your holiday up on your first day.
-            <br /><br />Our team at IKON are on hand to answer all your questions and book any extras you want - a bed at The White Party, a table at IKON, a private speedboat or water sports day out. We also have some top tips for where to eat for example the bran new Isabel's Beach Club and other amazing days out. Follow this link for details about all our events this Summer: <a href="https://a-listzante.com/event-info">https://a-listzante.com/event-info</a>
-            <br /><br />Follow @vvipeventszante on Instagram which is where photo's will be posted.
-            <br /><br />We can't wait to see you soon!
+          <br /><br />If you need me to resend this, let me know.
+          <br /><br />Please bring the balance in cash which means you will avoid any exchange rate and card fees. (if you have just booked one event with us, or paid off your package in full then there is no balance to pay of course)
+          <br /><br />You can pay in pound sterling or euros.
+          <br /><br />We advise coming down as soon as you arrive, so you can activate your Privilege discount wristband straight away. We are open all day from 11am - 5pm.
+          <br /><br />If you arrive with an event the first night then we will meet you that evening at IKON or Pure or if you arrive on a Sunday we will arrange to meet you outside Karma for The White Party
+          <br /><br />Once you arrive in Zante you will often be subject to hard sells by hotel reps and street sellers. They will say anything to get you to buy their events - we are cancelled, we poison puppies, you name it they will say it to get you to buy their events so they can earn commission from you. Paying us a large deposit for the best events in Zante then falling for these lies and handing over money is nothing short of madness so don't fall for it.
+          <br /><br />Every year we lose a few groups to certain hotel reps and they always come by and say 'they lied to us and it was a massive mistake'
+          <br /><br />Don't mess your holiday up on your first day.
+          <br /><br />Our team at IKON are on hand to answer all your questions and book any extras you want - a bed at The White Party, a table at IKON, a private speedboat or water sports day out. We also have some top tips for where to eat for example the bran new Isabel's Beach Club and other amazing days out. Follow this link for details about all our events this Summer: <a href="https://a-listzante.com/event-info">https://a-listzante.com/event-info</a>
+          <br /><br />Follow @vvipeventszante on Instagram which is where photo's will be posted.
+          <br /><br />We can't wait to see you soon!
         </mj-text>
 
       </mj-column>
     </mj-section>
-    
+
     <mj-section padding-top="30px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>

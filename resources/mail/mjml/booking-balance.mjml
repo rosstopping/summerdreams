@@ -4,7 +4,7 @@
   <mj-body background-color="#FFF7EF">
 
     <mj-include path="./resources/mail/inc/header.mjml" />
-    
+
     <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
         <mj-text font-family="Playfair Display, Georgia, serif;" font-size="24px" line-height="26px" align="center">
@@ -12,26 +12,26 @@
         </mj-text>
       </mj-column>
     </mj-section>
-    
+
     <!-- <mj-section padding-top="30px" padding-bottom="0px">
       <mj-column padding-left="30px" padding-right="30px">
-        <mj-image border-radius="20px" width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
+        <mj-image width="500px" src="https://vvipeventszante.com/wp-content/uploads/2021/07/vvip-zante-boat-party-2022-2-1400x1000.jpeg"></mj-image>
       </mj-column>
     </mj-section> -->
-    
+
     <mj-section padding-top="30px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
           Dear {{ $booking->name }},<br></br>
           In order to guarantee your event tickets we need a final deposit installment of £35 per person, which you can easily <a href="{{ url('account') }}">pay here</a>.
-          
+
           <br /><br />Many thanks<br />
           VVIP Resort Team
         </mj-text>
 
       </mj-column>
     </mj-section>
-    
+
     <mj-section padding-top="30px" padding-bottom="30px">
       <mj-column width="100%" padding-left="30px" padding-right="30px">
         <mj-text>
