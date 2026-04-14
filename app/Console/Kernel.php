@@ -21,7 +21,7 @@ class Kernel extends ConsoleKernel
         $schedule->job(new ScheduledPayments)->everyMinute();
         $schedule->job(new PaymentReminderJob)->everyMinute();
         // $schedule->job(new BookingBalancesJob)->dailyAt('11:00');
-        $schedule->job(new PriorArrivalMailJob)->dailyAt('11:00');
+        // $schedule->job(new PriorArrivalMailJob)->dailyAt('11:00');
     }
 
     /**
