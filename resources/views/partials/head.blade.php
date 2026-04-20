@@ -6,10 +6,10 @@
 {{-- <meta name="facebook-domain-verification" content="lprwnfxppcw0tkw0ovsfucijeio7ar" /> --}}
 
 @unless(request()->is('/') || request()->is('2026') || request()->is('reserve') || request()->is('book') || request()->is('book/*') || request()->is('account') || request()->is('account/*'))
-<script
+{{-- <script
   src='https://widget.superchat.de/snippet.js?applicationKey=WCeV0PG75okE23AGB8OpyAKNba'
   referrerpolicy='no-referrer-when-downgrade'>
-</script>
+</script> --}}
 @endunless
 
  <!-- Meta Pixel Code -->
