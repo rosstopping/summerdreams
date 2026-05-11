@@ -4,7 +4,7 @@
             <div class="text-black">
                 <x-ui.title>{{ data_get($content, 'title') }}</x-ui.title>
             </div>
-            <div data-sal-delay="300" data-sal-duration="1000" data-sal-easing="ease-in-out" class="prose text-gray-700 mt-8 text-lg max-w-none leading-relaxed">
+            <div class="prose text-gray-700 mt-8 text-lg max-w-none leading-relaxed">
                 {!! data_get($content, 'content') !!}
             </div>
             @if (data_get($content, 'button_text'))
