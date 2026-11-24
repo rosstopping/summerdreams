@@ -105,6 +105,7 @@ class SeasonalPricingTest extends TestCase
             'guests' => 2,
         ]);
 
+        $booking->forceFill(['guests' => 2])->save();
         $booking->packages()->attach($package->id);
         $booking->refresh();
 

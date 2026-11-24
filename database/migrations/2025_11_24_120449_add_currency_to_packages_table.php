@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::table('packages', function (Blueprint $table) {
-            $table->string('currency')->default('GBP')->after('deposit');
-        });
+        if (! Schema::hasColumn('packages', 'currency')) {
+            Schema::table('packages', function (Blueprint $table) {
+                $table->string('currency')->default('GBP')->after('deposit');
+            });
+        }
     }
 
     /**
@@ -21,8 +23,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('packages', function (Blueprint $table) {
-            $table->dropColumn('currency');
-        });
+        // The earlier events-and-packages migration owns this column.
+        // Its down method removes it when that migration is rolled back.
     }
 };
