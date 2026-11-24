@@ -11,7 +11,6 @@ use App\Http\Controllers\DiscountController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\FaqController;
 use App\Http\Controllers\GalleryController;
-use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\NewsletterController;
 use App\Http\Controllers\PageController;
@@ -26,12 +25,9 @@ use App\Http\Middleware\AccountMiddleware;
 use App\Http\Middleware\BookMiddleware;
 use App\Http\Middleware\VerifySeller;
 use App\Livewire\SellerBook;
-use App\Mail\BookingBalanceMail;
-use App\Mail\BookingConfirmationMail;
- use Illuminate\Support\Facades\Route;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use Illuminate\Support\Facades\Route;
 use Spatie\Honeypot\ProtectAgainstSpam;
-use Spatie\Sitemap\SitemapGenerator;
+use Spatie\StripeWebhooks\StripeWebhooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -83,15 +79,15 @@ Route::post('tickets/{seller:id}/{event:id}/{date}/{payment_method}/{currency}',
 Route::get('book/package/{package:slug}', [BookController::class, 'bookPackage'])->name('book.package')->middleware('doNotCacheResponse', BookMiddleware::class);
 Route::get('book/event/{event:slug}', [BookController::class, 'bookEvent'])->name('book.event')->middleware('doNotCacheResponse', BookMiddleware::class);
 Route::post('book/{eventOrPackage}/submit', [BookController::class, 'submit'])->name('book.submit')->middleware('doNotCacheResponse');
-Route::get('book/{eventOrPackage}/submit', fn() => redirect()->route('book'))->middleware('doNotCacheResponse');
+Route::get('book/{eventOrPackage}/submit', fn () => redirect()->route('book'))->middleware('doNotCacheResponse');
 Route::post('book/checkout', [BookController::class, 'checkout'])->name('book.checkout')->middleware('doNotCacheResponse', BookMiddleware::class);
 
 Route::get('payment/success', [BookController::class, 'paymentSuccess'])->name('payment.success')->middleware('doNotCacheResponse', BookMiddleware::class);
 Route::get('book/success', [BookController::class, 'success'])->name('book.success')->middleware('doNotCacheResponse', BookMiddleware::class);
 Route::get('book/cancel', [BookController::class, 'cancel'])->name('book.cancel')->middleware('doNotCacheResponse', BookMiddleware::class);
 
-Route::get('book/checkout', fn() => redirect()->route('book.cancel'))->middleware('doNotCacheResponse', BookMiddleware::class);
-Route::get('book/package/{package:slug}/submit', fn($package) => redirect()->route('book.package', $package))->middleware('doNotCacheResponse', BookMiddleware::class);
+Route::get('book/checkout', fn () => redirect()->route('book.cancel'))->middleware('doNotCacheResponse', BookMiddleware::class);
+Route::get('book/package/{package:slug}/submit', fn ($package) => redirect()->route('book.package', $package))->middleware('doNotCacheResponse', BookMiddleware::class);
 
 Route::get('checkout/{booking:reference}', CheckoutController::class)->name('checkout')->middleware('doNotCacheResponse', BookMiddleware::class);
 
@@ -129,4 +125,4 @@ Route::get('calendar/event/{event:slug}/{date}', [CalendarController::class, 'sh
 Route::get('{url}', PageController::class)->name('page')->where('url', '.*')->where('url', '^(?!admin|api|nova-api).*$');
 
 Route::stripeWebhooks('webhook/stripe');
-Route::post('webhook/stripe/{configKey}', Spatie\StripeWebhooks\StripeWebhooksController::class);
+Route::post('webhook/stripe/{configKey}', StripeWebhooksController::class);

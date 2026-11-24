@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Booking;
+use App\Support\CheckoutQrCode;
 use Illuminate\Http\Request;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use Stripe\StripeClient;
 
 class QrCodeCheckoutLinkController extends Controller
 {
@@ -16,14 +17,14 @@ class QrCodeCheckoutLinkController extends Controller
         /**
          * Setup stripe payment
          */
-        $stripe = new \Stripe\StripeClient(config('services.stripe.secret'));
+        $stripe = new StripeClient(config('services.stripe.secret'));
 
         /**
          * Create the stripe user
          */
         $customer = $stripe->customers->create([
             'name' => data_get($booking, 'name'),
-            'email' => data_get($booking, 'email')
+            'email' => data_get($booking, 'email'),
         ]);
 
         /**
@@ -39,7 +40,7 @@ class QrCodeCheckoutLinkController extends Controller
                     'unit_amount' => round($amount * 100),
                 ],
                 'quantity' => 1,
-            ]
+            ],
         ];
 
         /**
@@ -60,6 +61,6 @@ class QrCodeCheckoutLinkController extends Controller
             'cancel_url' => config('app.url'),
         ]);
 
-        return QrCode::size(500)->generate($session->url);
+        return CheckoutQrCode::svg($session->url);
     }
 }

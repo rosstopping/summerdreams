@@ -2,23 +2,23 @@
 
 namespace App\Livewire;
 
-use App\Models\Booking;
 use App\Models\Event;
-use Livewire\Component;
-use SimpleSoftwareIO\QrCode\Facades\QrCode;
+use App\Support\CheckoutQrCode;
 use Livewire\Attributes\Validate;
+use Livewire\Component;
 
 class SellerBook extends Component
 {
     public $events;
+
     public $dates = [];
 
     #[Validate('required')]
     public $event = null;
-    
+
     #[Validate('required')]
     public $date = null;
-    
+
     #[Validate('required')]
     public $payment_method = 'card';
 
@@ -32,6 +32,7 @@ class SellerBook extends Component
     // public $additional_details = false;
 
     public $url = null;
+
     public $qrcode = null;
 
     public function mount()
@@ -49,11 +50,13 @@ class SellerBook extends Component
     {
         $this->validate();
 
-        if ($this->payment_method === 'card') $this->currency = 'gbp';
+        if ($this->payment_method === 'card') {
+            $this->currency = 'gbp';
+        }
 
         $this->url = route('seller.book', [session('seller')->id, $this->event, $this->date, $this->payment_method, $this->currency]);
 
-        $this->qrcode = (string) QrCode::size(500)->generate($this->url);
+        $this->qrcode = (string) CheckoutQrCode::svg($this->url);
     }
 
     public function render()

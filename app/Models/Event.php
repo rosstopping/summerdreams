@@ -2,22 +2,19 @@
 
 namespace App\Models;
 
+use App\Enums\Currency;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-use Spatie\MediaLibrary\MediaCollections\Models\Media;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
-use App\Enums\Currency;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class Event extends Model implements HasMedia
 {
@@ -29,7 +26,7 @@ class Event extends Model implements HasMedia
     /**
      * Get the options for generating the slug.
      */
-    public function getSlugOptions() : SlugOptions
+    public function getSlugOptions(): SlugOptions
     {
         return SlugOptions::create()
             ->generateSlugsFrom('name')
@@ -44,7 +41,7 @@ class Event extends Model implements HasMedia
         'start_date',
         'repeat',
         'calendar_book_link',
-        'secret'
+        'secret',
     ];
 
     protected $casts = [
@@ -62,12 +59,12 @@ class Event extends Model implements HasMedia
     {
         return $this->belongsTo(Merchant::class);
     }
-    
+
     public function packages(): BelongsToMany
     {
         return $this->belongsToMany(Package::class);
     }
-    
+
     public function upgrade(): HasOne
     {
         return $this->hasOne(Upgrade::class);
@@ -95,34 +92,36 @@ class Event extends Model implements HasMedia
 
         $events = [];
 
-        if (!$this->repeat) array_push($events, $this->start_date);
+        if (! $this->repeat) {
+            array_push($events, $this->start_date);
+        }
 
         if ($this->repeat === 'daily') {
-            for ($i = 0; $i < $this->start_date->diffInDays($event_end_date); $i++) {
+            for ($i = 0; $i < (int) $this->start_date->diffInDays($event_end_date, true); $i++) {
                 $date = $this->start_date->copy()->addDays($i);
                 /**
                  * Check the day isn't in exceptions
                  */
-                if (!in_array($date->format('l'), data_get($this, 'repeat_exclude_days', []))) {
+                if (! in_array($date->format('l'), data_get($this, 'repeat_exclude_days', []))) {
                     array_push($events, $date);
                 }
             }
         }
 
         if ($this->repeat === 'weekly') {
-            for ($i = 0; $i < $this->start_date->diffInWeeks($event_end_date); $i++) {
+            for ($i = 0; $i < (int) $this->start_date->diffInWeeks($event_end_date, true); $i++) {
                 array_push($events, $this->start_date->copy()->addWeeks($i));
             }
         }
 
         if ($this->repeat === 'monthly') {
-            for ($i = 0; $i < $this->start_date->diffInMonths($event_end_date); $i++) {
+            for ($i = 0; $i < (int) $this->start_date->diffInMonths($event_end_date, true); $i++) {
                 array_push($events, $this->start_date->copy()->addMonth($i));
             }
         }
 
         if ($this->repeat === 'yearly') {
-            for ($i = 0; $i < $this->start_date->diffInYears($event_end_date); $i++) {
+            for ($i = 0; $i < (int) $this->start_date->diffInYears($event_end_date, true); $i++) {
                 array_push($events, $this->start_date->copy()->addYear($i));
             }
         }
@@ -140,24 +139,28 @@ class Event extends Model implements HasMedia
         /**
          * Remove any dates to exclude
          */
-        $events = collect($events)->filter(function($date) {
-            return !in_array($date->format('d/m/Y'), data_get($this, 'exclude_dates', []));
+        $events = collect($events)->filter(function ($date) {
+            return ! in_array($date->format('d/m/Y'), data_get($this, 'exclude_dates', []));
         });
 
         /**
          * Remove any sold out dates
          */
-        if (!$include_sold_out) {
-            $events = collect($events)->filter(function($date) {
-                return !in_array($date->format('d/m/Y'), data_get($this, 'sold_out_dates', []));
+        if (! $include_sold_out) {
+            $events = collect($events)->filter(function ($date) {
+                return ! in_array($date->format('d/m/Y'), data_get($this, 'sold_out_dates', []));
             });
         }
 
         /**
          * Only get events between $from & $to if set
          */
-        if ($from) $events = $events->filter(fn ($date) => $date >= $from);
-        if ($to) $events = $events->filter(fn ($date) => $date <= $to);
+        if ($from) {
+            $events = $events->filter(fn ($date) => $date >= $from);
+        }
+        if ($to) {
+            $events = $events->filter(fn ($date) => $date <= $to);
+        }
 
         return $events;
     }
