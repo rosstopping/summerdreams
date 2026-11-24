@@ -24,7 +24,7 @@
     "vite": "^4.0.0",
     "vite-plugin-image-optimizer": "^1.1.7",
     "vite-plugin-image-presets": "^0.3.4",
-    "vite-plugin-mjml": "^0.3.1",
+    "vite-plugin-mjml": "^0.5.3",
     "vite-plugin-webfont-dl": "^3.7.6"
   },
   "dependencies": {
